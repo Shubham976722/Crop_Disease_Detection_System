@@ -52,39 +52,23 @@ serializer = URLSafeTimedSerializer(app.secret_key)
 
 # =======================================================
 
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-MODEL_PATH = os.path.join(BASE_DIR, "models", "model.h5")
+MODEL_PATH = os.path.join(BASE_DIR, "models", "final_model.h5")
 JSON_PATH = os.path.join(BASE_DIR, "models", "plant_disease.json")
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploading_images")
-
-app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
-
-# Ensure folders exist
-if not os.path.exists(UPLOAD_FOLDER):
-    os.makedirs(UPLOAD_FOLDER)
-
+# create models folder if not exists
 if not os.path.exists(os.path.join(BASE_DIR, "models")):
     os.makedirs(os.path.join(BASE_DIR, "models"))
 
-# ================================
-# DOWNLOAD MODEL IF NOT EXISTS
-# ================================
-MODEL_PATH = "models/model.h5"
-
-# download if not exists
+# download model if not exists
 if not os.path.exists(MODEL_PATH):
     print("Downloading model...")
-    url = "https://drive.google.com/uc?id=1hzmhJZP2-j0ZFglYCUIb8qTOSYthDdxj"
+    url = "https://drive.google.com/uc?id=13GaS3vCnauZoxvyuiUQYxPrZ4E3y5M8V"
     gdown.download(url, MODEL_PATH, quiet=False)
 
 print("Loading Model...")
-model = tf.keras.models.load_model(
-    MODEL_PATH,
-    compile=False,
-    safe_mode=False
-)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 print("Model Loaded Successfully ✅")
 
 # ================================
