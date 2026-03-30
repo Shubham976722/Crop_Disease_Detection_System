@@ -29,6 +29,7 @@ env/
 *.pkl
 *.joblib
 *.h5
+*.part
 
 # ----------------------
 # VS Code
