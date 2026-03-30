@@ -71,16 +71,20 @@ if not os.path.exists(os.path.join(BASE_DIR, "models")):
 # ================================
 # DOWNLOAD MODEL IF NOT EXISTS
 # ================================
+MODEL_PATH = "models/model.h5"
+
+# download if not exists
 if not os.path.exists(MODEL_PATH):
     print("Downloading model...")
     url = "https://drive.google.com/uc?id=1hzmhJZP2-j0ZFglYCUIb8qTOSYthDdxj"
     gdown.download(url, MODEL_PATH, quiet=False)
 
-# ================================
-# LOAD MODEL
-# ================================
 print("Loading Model...")
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(
+    MODEL_PATH,
+    compile=False,
+    safe_mode=False
+)
 print("Model Loaded Successfully ✅")
 
 # ================================
