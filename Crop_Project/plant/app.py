@@ -6,6 +6,7 @@ import uuid
 import json
 import cv2
 import sqlite3
+from flask import send_from_directory
 from werkzeug.security import check_password_hash
 from werkzeug.security import generate_password_hash
 from tensorflow.keras.applications.efficientnet import preprocess_input
@@ -14,7 +15,7 @@ from itsdangerous import URLSafeTimedSerializer
 import difflib
 from datetime import datetime, timedelta
 import os
-import gdown
+
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 # ===============================
@@ -50,25 +51,33 @@ mail = Mail(app)
 
 serializer = URLSafeTimedSerializer(app.secret_key)
 
-# =======================================================
+# ================================
+# PATHS + CONFIG
+# ================================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-MODEL_PATH = os.path.join(BASE_DIR, "models", "final_model.h5")
+MODEL_PATH = os.path.join(BASE_DIR, "models", "plant_disease.keras")
 JSON_PATH = os.path.join(BASE_DIR, "models", "plant_disease.json")
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploading_images")
-# create models folder if not exists
-if not os.path.exists(os.path.join(BASE_DIR, "models")):
-    os.makedirs(os.path.join(BASE_DIR, "models"))
 
-# download model if not exists
-if not os.path.exists(MODEL_PATH):
-    print("Downloading model...")
-    url = "https://drive.google.com/uc?id=13GaS3vCnauZoxvyuiUQYxPrZ4E3y5M8V"
-    gdown.download(url, MODEL_PATH, quiet=False)
+# set upload folder in flask config
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
+# create upload folder if not exists
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
+# ================================
+# LOAD MODEL
+# ================================
 print("Loading Model...")
-model = tf.keras.models.load_model(MODEL_PATH, compile=False)
+
+model = tf.keras.models.load_model(
+    MODEL_PATH,
+    compile=False
+)
+
 print("Model Loaded Successfully ✅")
 
 # ================================
@@ -77,11 +86,13 @@ print("Model Loaded Successfully ✅")
 with open(JSON_PATH) as f:
     plant_disease_list = json.load(f)
 
-# Convert list → dictionary (for fast lookup)
+# Convert list to dictionary
 plant_disease = {item["name"]: item for item in plant_disease_list}
 
-# IMPORTANT: Match model class order
+# class names for prediction
 class_names = sorted([item["name"] for item in plant_disease_list])
+
+print("JSON Loaded Successfully ✅")
 
 # ==========================================
 # DISEASE KNOWLEDGE BASE (Chatbot)
