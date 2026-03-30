@@ -15,7 +15,7 @@ from itsdangerous import URLSafeTimedSerializer
 import difflib
 from datetime import datetime, timedelta
 import os
-import keras
+
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 # ===============================
