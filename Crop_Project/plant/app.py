@@ -5,7 +5,7 @@ import os
 import uuid
 import json
 import cv2
-import sqlite
+import sqlite3
 from flask import send_from_directory
 from werkzeug.security import check_password_hash
 from werkzeug.security import generate_password_hash
@@ -15,7 +15,6 @@ from itsdangerous import URLSafeTimedSerializer
 import difflib
 from datetime import datetime, timedelta
 import os
-
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 # ===============================
@@ -28,6 +27,7 @@ app.secret_key = "crop_health_secret_key"
 # Default session lifetime (for Remember Me)
 app.permanent_session_lifetime = timedelta(days=7)
 
+
 @app.before_request
 def make_session_temporary():
     if "user" in session:
@@ -38,6 +38,8 @@ def make_session_temporary():
             if datetime.utcnow() > expiry_time:
                 session.clear()
                 return redirect(url_for("login"))
+
+
 # ================= EMAIL CONFIGURATION =================
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
@@ -45,7 +47,7 @@ app.config["MAIL_PORT"] = 587
 app.config["MAIL_USE_TLS"] = True
 app.config["MAIL_USE_SSL"] = False
 app.config["MAIL_USERNAME"] = "krushimitraai2026@gmail.com"
-app.config["MAIL_PASSWORD"] = "iqsndrzovoconyta"
+app.config["MAIL_PASSWORD"] = "plhnimlcrddwsisp"
 
 mail = Mail(app)
 
@@ -73,10 +75,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 # ================================
 print("Loading Model...")
 
-model = tf.keras.models.load_model(
-    MODEL_PATH,
-    compile=False
-)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 
 print("Model Loaded Successfully ✅")
 
@@ -223,8 +222,8 @@ def init_db():
             role TEXT NOT NULL
         )
     """)
-    
-     # CONTACT MESSAGES TABLE
+
+    # CONTACT MESSAGES TABLE
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS contact_messages (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -297,7 +296,7 @@ def upload():
 
     print("DEBUG session disease:", session["last_disease"])
     print("DEBUG prediction name repr:", repr(prediction["name"]))
-    
+
     print("DEBUG Disease Name:", prediction["name"])
     # 🔥 Store predicted disease for chatbot context
     session["last_disease"] = prediction["name"]
@@ -336,8 +335,7 @@ def login():
             # 🔐 Block unverified users
             if user[7] == 0:
                 return render_template(
-                    "login.html",
-                    error="Please verify your email before logging in."
+                    "login.html", error="Please verify your email before logging in."
                 )
 
             # 🔄 Clear old session
@@ -364,13 +362,11 @@ def login():
                 return redirect(url_for("home"))
 
         else:
-            return render_template(
-                "login.html",
-                error="Invalid Username or Password"
-            )
+            return render_template("login.html", error="Invalid Username or Password")
 
     # GET request
     return render_template("login.html")
+
 
 @app.route("/logout")
 def logout():
@@ -628,7 +624,8 @@ def admin_dashboard():
         role_filter=role_filter,
         status_filter=status_filter,
     )
-    
+
+
 @app.route("/admin/messages")
 def admin_messages():
 
@@ -650,6 +647,7 @@ def admin_messages():
     conn.close()
 
     return render_template("admin_messages.html", messages=messages)
+
 
 @app.route("/admin-live-search")
 def admin_live_search():
@@ -757,7 +755,7 @@ def chatbot():
         "cause": ["cause", "reason", "why"],
         "fertilizer": ["fertilizer", "dose", "quantity", "spray", "how much"],
         "prevention": ["prevent", "avoid", "protection"],
-        "improve": ["improve", "recover", "growth", "healthy"]
+        "improve": ["improve", "recover", "growth", "healthy"],
     }
 
     # 🔍 Fuzzy Intent Detection
@@ -780,11 +778,15 @@ def chatbot():
         reply = disease_info.get("cause", "Cause information not available.")
 
     elif detected_intent == "fertilizer":
-        fertilizer = disease_info.get("fertilizer", "Fertilizer recommendation not available.")
+        fertilizer = disease_info.get(
+            "fertilizer", "Fertilizer recommendation not available."
+        )
         reply = f"Recommended fertilizer: {fertilizer}. Please follow proper dosage instructions."
 
     elif detected_intent == "prevention":
-        reply = "Remove infected leaves and avoid overwatering. Maintain proper spacing."
+        reply = (
+            "Remove infected leaves and avoid overwatering. Maintain proper spacing."
+        )
 
     elif detected_intent == "improve":
         reply = "Ensure balanced nutrients, sunlight, and regular monitoring."
@@ -797,12 +799,13 @@ def chatbot():
 
     return {"reply": reply}
 
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
 
-@app.route("/contact", methods=["GET","POST"])
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
 
     if request.method == "POST":
@@ -818,11 +821,14 @@ def contact():
         conn = sqlite3.connect("users.db")
         cursor = conn.cursor()
 
-        cursor.execute("""
+        cursor.execute(
+            """
         INSERT INTO contact_messages
         (name,mobile,email,location,crop,problem_type,message)
         VALUES (?,?,?,?,?,?,?)
-        """,(name,mobile,email,location,crop,problem_type,message))
+        """,
+            (name, mobile, email, location, crop, problem_type, message),
+        )
 
         conn.commit()
         conn.close()
@@ -830,6 +836,8 @@ def contact():
         return render_template("contact.html", success="Message sent successfully!")
 
     return render_template("contact.html")
+
+
 # @app.route("/predict")
 # def predict_page():
 #     if "user" not in session:

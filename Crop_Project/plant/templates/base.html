@@ -107,7 +107,9 @@
   <div class="spinner-overlay" id="loadingSpinner">
     <div class="spinner-border text-light" style="width:4rem;height:4rem;"></div>
   </div>
-
+  <div id="chatbot-toggle" onclick="toggleChatbot()">
+    💬
+  </div>
   <script>
     function showSpinner() {
       document.getElementById("loadingSpinner").style.display = "flex";
@@ -256,23 +258,15 @@
       }, 400);
     });
   </script>
-  <!-- Show Global Loader on Link/Button Click -->
-  <!-- <script>
-      document.querySelectorAll("a, button").forEach(element => {
-        element.addEventListener("click", function () {
-          document.getElementById("globalLoader").style.display = "flex";
-          document.getElementById("globalLoader").style.opacity = "1";
-        });
-      });
-    </script> -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <div class="social-sidebar">
     <a href="https://www.instagram.com/mitrakrushi_26/" class="social-item"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61577452363019" class="social-item"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61577452363019" class="social-item"><i
+        class="fab fa-facebook-f"></i></a>
     <a href="https://x.com/KrushiM2026" class="social-item"><i class="fab fa-twitter"></i></a>
     <a href="http://www.youtube.com/@KrushiMitra2026" class="social-item"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.linkedin.com/in/krushi-mitra-939bb23ba/" class="social-item"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.linkedin.com/in/krushi-mitra-939bb23ba/" class="social-item"><i
+        class="fab fa-linkedin-in"></i></a>
   </div>
 </body>
 <!-- ================= SOCIAL SIDEBAR ================= -->
