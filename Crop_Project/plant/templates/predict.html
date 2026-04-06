@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+</html>
 <div class="dashboard-wrapper">
 
     <!-- LEFT SIDE -->
@@ -154,7 +164,7 @@
         </div>
         {% endif %}
         <!-- 🌿 SMART FARMER ASSISTANT -->
-        <div class="farmer-card mt-3">
+        <!-- <div class="farmer-card mt-3">
 
             <div class="chat-header">
                 <div class="chat-avatar">🤖</div>
@@ -171,7 +181,7 @@
                 <button onclick="sendMessage()">Send</button>
             </div>
 
-        </div>
+        </div> -->
         {% else %}
 
         <div class="analysis-placeholder text-center">
@@ -202,8 +212,29 @@
         <p class="loading-text">Analyzing Crop...</p>
     </div>
 </div> -->
+<!-- 🔥 FLOATING CHATBOT -->
 
+<!-- 🔥 CHATBOT -->
 
+<div id="chatbot-box">
+
+    <div class="chat-header">
+        <span>🤖 कृषि मित्र</span>
+        <span onclick="toggleChatbot()" style="cursor:pointer;">✖</span>
+    </div>
+
+    <div id="chatBox" class="chat-body"></div>
+
+    <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Ask about crops...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<div id="chatbot-toggle" onclick="toggleChatbot()">
+    <img src="{{ url_for('static', filename='images/farmer-bot.png') }}" alt="chatbot">
+</div>
 <!-- 🌿 LEAF LOADER -->
 <div id="leafLoaderOverlay" class="leaf-loader-overlay">
 
@@ -229,6 +260,15 @@
     </div>
 </div>
 <script>
+    function toggleChatbot() {
+        let box = document.getElementById("chatbot-box");
+
+        if (box.style.display === "flex") {
+            box.style.display = "none";
+        } else {
+            box.style.display = "flex";
+        }
+    }
     function sendMessage() {
 
         const input = document.getElementById("chatInput");
