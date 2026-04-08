@@ -15,6 +15,13 @@ from itsdangerous import URLSafeTimedSerializer
 import difflib
 from datetime import datetime, timedelta
 import os
+from flask import flash
+import random
+
+
+def generate_otp():
+    return str(random.randint(100000, 999999))
+
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 # ===============================
@@ -27,7 +34,7 @@ app.secret_key = "crop_health_secret_key"
 # Default session lifetime (for Remember Me)
 app.permanent_session_lifetime = timedelta(days=7)
 
-
+print(app.url_map)
 @app.before_request
 def make_session_temporary():
     if "user" in session:
@@ -213,18 +220,27 @@ def init_db():
     conn = sqlite3.connect("users.db", timeout=10, check_same_thread=False)
     cursor = conn.cursor()
 
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            username TEXT NOT NULL UNIQUE,
-            email TEXT NOT NULL UNIQUE,
-            password TEXT NOT NULL,
-            role TEXT NOT NULL
-        )
-    """)
+    cursor.execute(
+        """
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL UNIQUE,
+    email TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    role TEXT NOT NULL,
+    reset_token TEXT,
+    reset_token_expiry TEXT,
+    is_verified INTEGER DEFAULT 0,
+    email_token TEXT,
+    otp TEXT,
+    otp_expiry TEXT
+)
+"""
+    )
 
     # CONTACT MESSAGES TABLE
-    cursor.execute("""
+    cursor.execute(
+        """
     CREATE TABLE IF NOT EXISTS contact_messages (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
@@ -236,7 +252,8 @@ def init_db():
         message TEXT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
-    """)
+    """
+    )
 
     conn.commit()
     conn.close()
@@ -333,13 +350,15 @@ def login():
         if user and check_password_hash(user[3], password):
 
             # 🔐 Block unverified users
-            if user[7] == 0:
-                return render_template(
-                    "login.html", error="Please verify your email before logging in."
-                )
+            is_verified = (
+                user[7] if len(user) > 7 else 0
+            )  # Handle missing column gracefully
 
-            # 🔄 Clear old session
-            session.clear()
+            if is_verified == 0:
+                session.clear()  # Clear any existing session data
+                session["verify_email"] = user[2]  # email store
+                flash("Please verify your email using OTP", "warning")
+                return redirect(url_for("verify_otp"))
 
             # 🔐 Store session data
             session["user"] = user[1]
@@ -386,160 +405,516 @@ def register():
         hashed_password = generate_password_hash(password)
 
         try:
-            conn = sqlite3.connect("users.db")
-            cursor = conn.cursor()
+            otp = str(generate_otp())
+            expiry = datetime.now() + timedelta(minutes=5)
 
-            cursor.execute(
-                "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)",
-                (username, email, hashed_password, role),
-            )
+            with sqlite3.connect("users.db", timeout=10) as conn:
+                cursor = conn.cursor()
 
-            conn.commit()
-            conn.close()
+                cursor.execute(
+                    """
+                    INSERT INTO users (username, email, password, role, otp, otp_expiry, is_verified)
+                    VALUES (?, ?, ?, ?, ?, ?, 0)
+                """,
+                    (username, email, hashed_password, role, otp, expiry.isoformat()),
+                )
 
-            # ================= EMAIL VERIFICATION =================
-
-            token = serializer.dumps(email, salt="email-confirm")
-
-            verification_link = url_for("verify_email", token=token, _external=True)
+                conn.commit()
 
             msg = Message(
-                "Verify Your Email - Crop Health Diagnostic System",
+                "Your OTP - Crop Health Diagnostic System",
                 sender=app.config["MAIL_USERNAME"],
                 recipients=[email],
             )
 
-            msg.body = f"""
-Hello {username},
+            msg.subject = "🔐 Verify Your Email | 🌿कृषि मित्र AI"
 
-Thank you for registering in Crop Health Diagnostic System.
+            msg.html = f"""
+<div style="font-family: 'Segoe UI', Arial; background:#f4f6f8; padding:30px;">
 
-Please click the link below to verify your email:
+    <div style="max-width:600px; margin:auto; background:white; border-radius:12px; padding:25px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
 
-{verification_link}
+        <h2 style="color:#2e7d32; margin-bottom:10px;">
+            🌿कृषि मित्र AI
+        </h2>
 
-This link will expire in 30 minutes.
+        <p style="color:#555;">Hello {username},</p>
+
+        <p style="color:#555;">
+            Welcome! Please verify your email using the OTP below:
+        </p>
+
+        <div style="
+            background:linear-gradient(135deg,#e8f5e9,#ffffff);
+            padding:18px;
+            text-align:center;
+            font-size:32px;
+            font-weight:bold;
+            border-radius:10px;
+            margin:20px 0;
+            letter-spacing:3px;
+            color:#1b5e20;
+        ">
+            {otp}
+        </div>
+
+        <p style="color:#555;">
+            ⏳ This OTP is valid for <b>5 minutes</b>.
+        </p>
+
+        <p style="color:#777; font-size:13px;">
+            If you didn’t request this, please ignore this email.
+        </p>
+
+        <hr>
+
+        <p style="font-size:12px; color:#aaa;">
+            © 2026 🌿कृषि मित्र AI | 🌱 Crop Health Diagnostic System 🌱
+        </p>
+
+    </div>
+
+</div>
 """
-
             mail.send(msg)
 
-            # ======================================================
-
-            return render_template(
-                "register.html",
-                success="Registration successful! Please check your email to verify your account.",
-            )
+            session["verify_email"] = email
+            return redirect(url_for("verify_otp"))
 
         except sqlite3.IntegrityError:
-            return render_template(
-                "register.html", error="Username or Email already exists"
-            )
+            return render_template("register.html", error="User already exists")
 
     return render_template("register.html")
 
+# Otp Verification Route
+@app.route("/verify-otp", methods=["GET", "POST"])
+def verify_otp():
 
-#  Email verification route
-@app.route("/verify/<token>")
-def verify_email(token):
-    try:
-        # Decode the token (valid for 30 minutes = 1800 seconds)
-        email = serializer.loads(token, salt="email-confirm", max_age=1800)
-    except:
-        return "Verification link is invalid or has expired."
+    email = session.get("verify_email")
 
-    try:
-        conn = sqlite3.connect("users.db")
-        cursor = conn.cursor()
-
-        cursor.execute("UPDATE users SET is_verified = 1 WHERE email = ?", (email,))
-
-        conn.commit()
-        conn.close()
-
+    if not email:
         return render_template(
-            "success.html",
-            title="Email Verified Successfully",
-            message="Your account has been activated. You can now login.",
-            redirect_url=url_for("login"),
-            button_text="Login Now",
+            "verify_otp.html", error="Session expired. Please register again."
         )
 
-    except Exception as e:
-        return "Database error occurred during verification."
+    if request.method == "POST":
+
+        user_otp = request.form["otp"].strip()
+
+        with sqlite3.connect("users.db", timeout=10) as conn:
+            cursor = conn.cursor()
+
+            cursor.execute(
+                """
+                SELECT otp, otp_expiry, is_verified 
+                FROM users WHERE email=?
+            """,
+                (email,),
+            )
+
+            user = cursor.fetchone()
+
+            if user:
+                db_otp, expiry, is_verified = user
+
+                print("Entered OTP:", user_otp)
+                print("DB OTP:", db_otp)
+
+                if is_verified == 1:
+                    return render_template(
+                        "login.html", success="Already verified. Please login."
+                    )
+
+                if not expiry or datetime.now() > datetime.fromisoformat(expiry):
+                    return render_template(
+                        "verify_otp.html", error="OTP expired. Click resend."
+                    )
+
+                if str(user_otp).strip() == str(db_otp).strip():
+
+                    cursor.execute(
+                        """
+                        UPDATE users 
+                        SET is_verified=1, otp=NULL, otp_expiry=NULL 
+                        WHERE email=?
+                    """,
+                        (email,),
+                    )
+
+                    conn.commit()
+
+                    session.pop("verify_email", None)
+
+                    return render_template(
+                        "verify_otp.html",
+                        success="✅ Email verified successfully!",
+                        show_login_button=True,
+                        email=None,
+                    )
+
+        return render_template("verify_otp.html", error="Invalid OTP")
+
+    return render_template("verify_otp.html", email=email)
+
+@app.route("/resend-otp")
+def resend_otp():
+
+    # 🔐 Step 1: Get email from session
+    email = session.get("verify_email")
+
+    if not email:
+        return redirect(url_for("login"))
+
+    # 🔥 Step 2: Generate new OTP
+    otp = str(generate_otp())
+    expiry = datetime.now() + timedelta(minutes=5)
+
+    # 🔐 Step 3: Update OTP in DB
+    with sqlite3.connect("users.db", timeout=10) as conn:
+        cursor = conn.cursor()
+
+        cursor.execute(
+            """
+            UPDATE users 
+            SET otp=?, otp_expiry=? 
+            WHERE email=?
+        """,
+            (otp, expiry.isoformat(), email),
+        )
+
+        conn.commit()
+
+    # 🔥 Step 4: Send email
+    msg = Message(
+        subject="🔄 New OTP Requested | Krushi Mitra AI",
+        sender=app.config["MAIL_USERNAME"],
+        recipients=[email],
+    )
+
+    msg.subject = "🔄 New OTP Requested | 🌿कृषि मित्र AI"
+
+    msg.html = f"""
+<div style="font-family: 'Segoe UI', Arial; background:#f4f6f8; padding:30px;">
+
+    <div style="max-width:600px; margin:auto; background:white; border-radius:12px; padding:25px;">
+
+        <h2 style="color:#2e7d32;">🌿कृषि मित्र AI</h2>
+
+        <p>Hello,</p>
+
+        <p>You requested a new OTP for verification.</p>
+
+        <div style="
+            background:#e8f5e9;
+            padding:15px;
+            text-align:center;
+            font-size:28px;
+            font-weight:bold;
+            border-radius:10px;
+            margin:20px 0;
+            letter-spacing:2px;
+        ">
+            {otp}
+        </div>
+
+        <p>⏳ Valid for <b>5 minutes</b></p>
+
+        <p style="color:#777; font-size:13px;">
+            If this wasn’t you, please ignore this email.
+        </p>
+
+        <hr>
+
+        <p style="font-size:12px; color:#aaa;">
+            Secure Notification |🌿कृषि मित्र AI 🌱
+        </p>
+
+    </div>
+
+</div>
+"""
+    mail.send(msg)
+
+    # 🔁 Step 5: Redirect back to verify page
+    return redirect(url_for("verify_otp"))
 
 
-@app.route("/forgot_password", methods=["GET", "POST"])
+@app.route("/forgot-password", methods=["GET", "POST"])
 def forgot_password():
 
     if request.method == "POST":
-        email = request.form["email"]
+        email = request.form["email"].strip()
 
-        conn = sqlite3.connect("users.db", timeout=10)
-        cursor = conn.cursor()
+        with sqlite3.connect("users.db") as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM users WHERE email=?", (email,))
+            user = cursor.fetchone()
 
-        cursor.execute("SELECT * FROM users WHERE email=?", (email,))
-        user = cursor.fetchone()
-
-        conn.close()
-
-        # Even if email not found, show same message (security reason)
         if user:
-            token = serializer.dumps(email, salt="password-reset")
+            otp = str(generate_otp())
+            expiry = datetime.now() + timedelta(minutes=5)
 
-            reset_link = url_for("reset_password", token=token, _external=True)
+            with sqlite3.connect("users.db") as conn:
+                cursor = conn.cursor()
+                cursor.execute("""
+                    UPDATE users 
+                    SET otp=?, otp_expiry=? 
+                    WHERE email=?
+                """, (otp, expiry.isoformat(), email))
+                conn.commit()
 
+            session["reset_email"] = email
+
+            # ✅ email sending INSIDE if
             msg = Message(
-                "Reset Your Password - Crop Health Diagnostic System",
-                sender=app.config["MAIL_USERNAME"],
-                recipients=[email],
-            )
+    subject="🔐 Password Reset OTP | 🌿कृषि मित्र AI",
+    sender=app.config["MAIL_USERNAME"],
+    recipients=[email],
+)
 
-            msg.body = f"""
-Hello,
+            msg.html = f"""
+<div style="font-family: 'Segoe UI', Arial; background:#f4f6f8; padding:30px;">
 
-Click the link below to reset your password:
+    <div style="max-width:600px; margin:auto; background:white; border-radius:14px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.1);">
 
-{reset_link}
+        <!-- Header -->
+        <div style="background: linear-gradient(135deg, #2e7d32, #66bb6a); padding:20px; text-align:center; color:white;">
+            <h2 style="margin:0;">🌿कृषि मित्र AI</h2>
+            <p style="margin:5px 0 0;">Secure Password Reset</p>
+        </div>
 
-This link will expire in 30 minutes.
+        <!-- Body -->
+        <div style="padding:25px; text-align:center;">
+
+            <h3 style="color:#333;">🔐 Reset Your Password</h3>
+
+            <p style="color:#555;">
+                Use the OTP below to reset your password.
+            </p>
+
+            <!-- OTP BOX -->
+            <div style="
+                background:#e8f5e9;
+                padding:18px;
+                font-size:30px;
+                font-weight:bold;
+                border-radius:12px;
+                margin:20px auto;
+                letter-spacing:3px;
+                color:#1b5e20;
+                display:inline-block;
+                min-width:200px;
+            ">
+                {otp}
+            </div>
+
+            <p style="color:#777;">
+                ⏳ Valid for <b>5 minutes</b>
+            </p>
+
+            <p style="font-size:13px; color:#999;">
+                If you didn’t request this, please ignore this email.
+            </p>
+
+        </div>
+
+        <!-- Footer -->
+        <div style="background:#f1f1f1; padding:15px; text-align:center; font-size:12px; color:#888;">
+            © 2026 🌿कृषि मित्र AI 🌱 | Secure Notification
+        </div>
+
+    </div>
+
+</div>
 """
 
             mail.send(msg)
 
-        return render_template(
-            "forgot_password.html",
-            success="If this email is registered, a reset link has been sent.",
-        )
+            return redirect(url_for("verify_reset_otp"))
+
+        return render_template("forgot_password.html", error="Email not found")
 
     return render_template("forgot_password.html")
 
+@app.route("/resend-reset-otp", endpoint="resend_reset_otp_new")
+def resend_reset_otp():
 
-@app.route("/reset_password/<token>", methods=["GET", "POST"])
+    email = session.get("reset_email")
+
+    if not email:
+        return redirect(url_for("forgot_password"))
+
+    otp = str(generate_otp())
+    expiry = datetime.now() + timedelta(minutes=5)
+
+    with sqlite3.connect("users.db") as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            UPDATE users 
+            SET otp=?, otp_expiry=? 
+            WHERE email=?
+        """, (otp, expiry.isoformat(), email))
+        conn.commit()
+
+    msg = Message(
+    subject="🔐 Password Reset OTP | 🌿कृषि मित्र AI",
+    sender=app.config["MAIL_USERNAME"],
+    recipients=[email],
+)
+
+    msg.html = f"""
+<div style="font-family: 'Segoe UI', Arial; background:#f4f6f8; padding:30px;">
+
+    <div style="max-width:600px; margin:auto; background:white; border-radius:14px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+
+        <!-- Header -->
+        <div style="background: linear-gradient(135deg, #2e7d32, #66bb6a); padding:20px; text-align:center; color:white;">
+            <h2 style="margin:0;">🌿कृषि मित्रAI</h2>
+            <p style="margin:5px 0 0;">Secure Password Reset</p>
+        </div>
+
+        <!-- Body -->
+        <div style="padding:25px; text-align:center;">
+
+            <h3 style="color:#333;">🔐 Reset Your Password</h3>
+
+            <p style="color:#555;">
+                Use the OTP below to reset your password.
+            </p>
+
+            <!-- OTP BOX -->
+            <div style="
+                background:#e8f5e9;
+                padding:18px;
+                font-size:30px;
+                font-weight:bold;
+                border-radius:12px;
+                margin:20px auto;
+                letter-spacing:3px;
+                color:#1b5e20;
+                display:inline-block;
+                min-width:200px;
+            ">
+                {otp}
+            </div>
+
+            <p style="color:#777;">
+                ⏳ Valid for <b>5 minutes</b>
+            </p>
+
+            <p style="font-size:13px; color:#999;">
+                If you didn’t request this, please ignore this email.
+            </p>
+
+        </div>
+
+        <!-- Footer -->
+        <div style="background:#f1f1f1; padding:15px; text-align:center; font-size:12px; color:#888;">
+            © 2026 🌿कृषि मित्र AI 🌱 | Secure Notification
+        </div>
+
+    </div>
+
+</div>
+"""
+    mail.send(msg)
+    flash("✅ New OTP sent successfully!", "success") 
+    return redirect(url_for("verify_reset_otp"))  # 🔥 IMPORTANT
+
+@app.route("/verify-reset-otp", methods=["GET", "POST"])
+def verify_reset_otp():
+
+    email = session.get("reset_email")
+
+    if not email:
+        return redirect(url_for("forgot_password"))
+
+    if request.method == "POST":
+        user_otp = request.form["otp"].strip()
+
+        with sqlite3.connect("users.db") as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT otp, otp_expiry FROM users WHERE email=?", (email,))
+            user = cursor.fetchone()
+
+        if user:
+            db_otp, expiry = user
+
+            if not expiry or datetime.now() > datetime.fromisoformat(expiry):
+                return render_template("verify_reset_otp.html", error="OTP expired")
+
+            if str(user_otp).strip() == str(db_otp).strip():
+                return redirect(url_for("reset_password_otp"))  # 🔥 IMPORTANT
+
+        return render_template("verify_reset_otp.html", error="Invalid OTP")
+
+    return render_template("verify_reset_otp.html")
+
+@app.route("/reset-password-otp", methods=["GET", "POST"])
+def reset_password_otp():
+
+    email = session.get("reset_email")
+
+    if not email:
+        return redirect(url_for("forgot_password"))
+
+    if request.method == "POST":
+        new_password = request.form["password"]
+        confirm_password = request.form["confirm_password"]
+
+        if new_password != confirm_password:
+            return render_template("reset_password.html", error="Passwords do not match")
+
+        hashed_password = generate_password_hash(new_password)
+
+        with sqlite3.connect("users.db") as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                UPDATE users 
+                SET password=?, otp=NULL, otp_expiry=NULL 
+                WHERE email=?
+            """, (hashed_password, email))
+            conn.commit()
+
+        session.pop("reset_email", None)
+
+        return render_template(
+            "success.html",
+            title="Password Updated Successfully",
+            message="Now login with new password",
+            redirect_url=url_for("login"),
+            button_text="Go to Login"
+        )
+
+    return render_template("reset_password.html")
+
+@app.route("/reset-password/<token>", methods=["GET", "POST"])
 def reset_password(token):
 
     try:
         email = serializer.loads(token, salt="password-reset", max_age=1800)
     except:
-        return "Reset link is invalid or has expired."
+        return "Reset link is invalid or expired."
 
     if request.method == "POST":
         new_password = request.form["password"]
+
         hashed_password = generate_password_hash(new_password)
 
-        conn = sqlite3.connect("users.db", timeout=10)
-        cursor = conn.cursor()
+        with sqlite3.connect("users.db", timeout=10) as conn:
+            cursor = conn.cursor()
 
-        cursor.execute(
-            "UPDATE users SET password=? WHERE email=?", (hashed_password, email)
-        )
+            cursor.execute(
+                "UPDATE users SET password=? WHERE email=?",
+                (hashed_password, email),
+            )
 
-        conn.commit()
-        conn.close()
+            conn.commit()
 
         return render_template(
             "success.html",
             title="Password Updated Successfully",
-            message="Your password has been changed. You can now login securely.",
+            message="Your password has been changed.",
             redirect_url=url_for("login"),
             button_text="Go to Login",
         )
@@ -636,11 +1011,13 @@ def admin_messages():
     conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
 
-    cursor.execute("""
+    cursor.execute(
+        """
     SELECT id, name, mobile, crop, problem_type, message, created_at
     FROM contact_messages
     ORDER BY created_at DESC
-    """)
+    """
+    )
 
     messages = cursor.fetchall()
 
@@ -848,4 +1225,4 @@ def contact():
 # ================================
 if __name__ == "__main__":
     init_db()
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=True)

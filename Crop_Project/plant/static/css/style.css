@@ -1590,7 +1590,8 @@ h5 {
     width: 70px;
     height: 70px;
 
-    background: transparent;   /* 🔥 REMOVE GREEN BG */
+    background: transparent;
+    /* 🔥 REMOVE GREEN BG */
     border-radius: 50%;
 
     display: flex;
@@ -1600,8 +1601,10 @@ h5 {
     cursor: pointer;
     z-index: 99999;
 
-    box-shadow: none;   /* 🔥 remove glow */
+    box-shadow: none;
+    /* 🔥 remove glow */
 }
+
 /* Icon Image */
 #chatbot-toggle img {
     width: 60px;
@@ -1610,7 +1613,7 @@ h5 {
 
     border-radius: 50%;
     transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Hover */
@@ -2199,4 +2202,225 @@ select option {
     background: linear-gradient(135deg,
             rgba(0, 0, 0, 0.9),
             rgba(0, 50, 30, 0.9));
+}
+
+/* OTP PAGE */
+.otp-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.otp-card {
+    width: 360px;
+    padding: 30px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 150, 0.2);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.otp-card h2 {
+    margin-bottom: 10px;
+}
+
+.otp-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+
+    border-radius: 10px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.otp-card button {
+    width: 100%;
+    padding: 10px;
+
+    background: linear-gradient(135deg, #00c853, #1de9b6);
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg, #00c853, #1de9b6);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.alert.success {
+    background: rgba(0, 255, 150, 0.2);
+    color: #00e676;
+}
+
+.alert.error {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff5252;
+}
+
+.otp-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.otp-card {
+    width: 380px;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 150, 0.2);
+
+    text-align: center;
+    color: white;
+}
+
+.otp-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.otp-card button {
+    width: 100%;
+    padding: 10px;
+
+    background: linear-gradient(135deg, #00c853, #1de9b6);
+    border: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.login-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg, #00c853, #1de9b6);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.alert.success {
+    background: rgba(0, 255, 150, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.alert.error {
+    background: rgba(255, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* RESEND SECTION */
+.resend-section {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* BUTTON */
+.resend-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 18px;
+
+    background: linear-gradient(135deg, #00c853, #1de9b6);
+    color: black;
+
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 255, 150, 0.3);
+}
+
+/* HOVER EFFECT */
+.resend-btn:hover {
+    transform: scale(1.05);
+    background: #1b5e20;
+    color: white;
+}
+
+/* DISABLED STATE */
+.resend-btn.disabled {
+    background: #555;
+    pointer-events: none;
+    color: #ccc;
+    box-shadow: none;
+}
+
+/* TIMER TEXT */
+.timer-text {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.resend-btn:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.alert {
+    transition: opacity 0.5s ease;
+}
+
+.sub-text {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+#resendBtn {
+    color: #1de9b6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#resendBtn:hover {
+    text-decoration: underline;
 }
