@@ -84,36 +84,6 @@ Email Service:
 
 ---
 
-## 📁 Project Structure
-
-Crop_Project/
-│
-├── plant/
-│   ├── app.py
-│   ├── models/
-│   │   ├── plant_disease.keras
-│   │   ├── plant_disease.json
-│   │
-│   ├── static/
-│   │   ├── css/
-│   │   ├── images/
-│   │
-│   ├── templates/
-│   │   ├── home.html
-│   │   ├── predict.html
-│   │   ├── login.html
-│   │   ├── register.html
-│   │   ├── admin_dashboard.html
-│   │   ├── contact.html
-│   │
-│   ├── uploading_images/
-│   ├── users.db
-│
-├── requirements.txt
-├── README.md
-
----
-
 ## ⚙️ Installation & Setup
 
 1. Clone the repository:
