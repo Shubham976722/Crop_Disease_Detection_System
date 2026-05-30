@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="login-section d-flex justify-content-center align-items-center">
+
+    <div class="login-card">
+
+        <h2 class="text-center mb-4">🌱 Create Account</h2>
+
+        {% if error %}
+        <div class="alert alert-danger alert-dismissible fade show">
+            {{ error }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        {% endif %}
+
+        {% if success %}
+        <div class="alert alert-success alert-dismissible fade show">
+            {{ success }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        {% endif %}
+
+        <form method="POST">
+
+            <!-- Username -->
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"
+                    required>
+                <button type="button" class="btn btn-outline-light" onclick="togglePassword()">
+                    <i class="bi bi-eye" id="toggleIcon"></i>
+                </button>
+            </div>
+
+            <!-- Role -->
+            <div class="mb-3">
+                <select name="role" class="form-control">
+                    <option value="farmer">Farmer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+
+            <button class="btn btn-success w-100">Sign Up</button>
+
+        </form>
+
+        <p class="text-center mt-3">
+            Already have an account?
+            <a href="{{ url_for('login') }}" class="text-warning">Login</a>
+        </p>
+
+    </div>
+
+</section>
+
+<script>
+    function togglePassword() {
+        var passwordInput = document.getElementById('password');
+        var icon = document.getElementById('toggleIcon');
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+        } else {
+            passwordInput.type = "password";
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+        }
+    }
+</script>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="success-wrapper">
+
+    <div class="success-card">
+
+        <div class="success-icon">
+            ✔
+        </div>
+
+        <h2>{{ title }}</h2>
+        <p>{{ message }}</p>
+
+        <a href="{{ redirect_url }}" class="success-btn">
+            {{ button_text }}
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="admin-page">
+
+    <div class="admin-header">
+        <h2>📩 Farmer Contact Messages</h2>
+        <p>All farmer support requests and inquiries</p>
+    </div>
+
+    <div class="admin-card">
+
+        <table class="admin-table messages-table">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Farmer</th>
+                    <th>Mobile</th>
+                    <th>Crop</th>
+                    <th>Problem</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {% for msg in messages %}
+
+                <tr>
+
+                    <td>#{{ msg[0] }}</td>
+
+                    <td>
+                        <div class="farmer-name">
+                            🌾 {{ msg[1] }}
+                        </div>
+                    </td>
+
+                    <td>
+                        <span class="mobile">
+                            📞 {{ msg[2] }}
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="crop-tag">
+                            {{ msg[3] }}
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="problem-tag">
+                            {{ msg[4] }}
+                        </span>
+                    </td>
+
+                    <td class="message">
+                        {{ msg[5] }}
+                    </td>
+
+                    <td class="date">
+                        {{ msg[6] }}
+                    </td>
+                    {% if messages|length == 0 %}
+                <tr>
+                    <td colspan="7" style="text-align:center;padding:20px;">
+                        No farmer messages yet
+                    </td>
+                </tr>
+                {% endif %}
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

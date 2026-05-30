@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="admin-wrapper">
+
+    <div class="admin-header">
+        <h2>🌿 Admin Control Panel</h2>
+        <p>Manage users and system activity</p>
+
+        <a href="{{ url_for('admin_messages') }}" class="btn btn-success mt-2">
+            View Contact Messages
+        </a>
+
+
+    </div>
+
+    <div class="admin-stats">
+        <div class="stat-card">
+            <h3>{{ total_users }}</h3>
+            <p>Total Users</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>{{ verified_users }}</h3>
+            <p>Verified</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>{{ unverified_users }}</h3>
+            <p>Unverified</p>
+        </div>
+    </div>
+
+    <div class="admin-table-card">
+        <form method="GET" action="{{ url_for('admin_dashboard') }}" class="admin-search-form">
+
+            <div class="search-group">
+                <input type="text" name="search" id="liveSearch" placeholder="🔍 Search username or email"
+                    value="{{ search }}">
+            </div>
+
+            <div class="filter-group">
+                <select name="role">
+                    <option value="">All Roles</option>
+                    <option value="admin" {% if role_filter=='admin' %}selected{% endif %}>Admin</option>
+                    <option value="farmer" {% if role_filter=='farmer' %}selected{% endif %}>Farmer</option>
+                </select>
+
+                <select name="status">
+                    <option value="">All Status</option>
+                    <option value="verified" {% if status_filter=='verified' %}selected{% endif %}>Verified</option>
+                    <option value="unverified" {% if status_filter=='unverified' %}selected{% endif %}>Unverified
+                    </option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-apply">
+                Apply
+            </button>
+
+        </form>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                {% for user in users %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+
+                    <td>
+                        {% if user[3] == "admin" %}
+                        <span class="badge-admin">Admin</span>
+                        {% else %}
+                        <span class="badge-farmer">Farmer</span>
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        {% if user[4] == 1 %}
+                        <span class="status-verified">✔ Verified</span>
+                        {% else %}
+                        <span class="status-unverified">✖ Not Verified</span>
+                        {% endif %}
+                    </td>
+
+                    <td class="action-buttons">
+                        <a href="{{ url_for('delete_user', user_id=user[0]) }}" class="btn-delete">Delete</a>
+                        <a href="{{ url_for('toggle_role', user_id=user[0]) }}" class="btn-role">Toggle Role</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="pagination-container">
+
+            <!-- PREVIOUS BUTTON -->
+            {% if page > 1 %}
+            <a class="page-btn nav-btn"
+                href="{{ url_for('admin_dashboard', page=page-1, search=search, role=role_filter, status=status_filter) }}">
+                ←
+            </a>
+            {% else %}
+            <span class="page-btn disabled">←</span>
+            {% endif %}
+
+            <!-- PAGE NUMBERS -->
+            {% for p in range(1, total_pages + 1) %}
+            <a class="page-btn {% if p == page %}active-page{% endif %}"
+                href="{{ url_for('admin_dashboard', page=p, search=search, role=role_filter, status=status_filter) }}">
+                {{ p }}
+            </a>
+            {% endfor %}
+
+            <!-- NEXT BUTTON -->
+            {% if page < total_pages %} <a class="page-btn nav-btn"
+                href="{{ url_for('admin_dashboard', page=page+1, search=search, role=role_filter, status=status_filter) }}">
+                →
+                </a>
+                {% else %}
+                <span class="page-btn disabled">→</span>
+                {% endif %}
+
+        </div>
+    </div>
+
+</div>
+<script>
+    document.getElementById("liveSearch").addEventListener("keyup", function () {
+
+        let searchValue = this.value;
+
+        fetch(`/admin-live-search?search=${searchValue}&page=1`)
+            .then(response => response.json())
+            .then(data => {
+
+                let tableBody = document.getElementById("userTableBody");
+                tableBody.innerHTML = "";
+
+                data.users.forEach(user => {
+
+                    let roleBadge = user.role === "admin"
+                        ? '<span class="badge-admin">Admin</span>'
+                        : '<span class="badge-farmer">Farmer</span>';
+
+                    let statusBadge = user.is_verified === 1
+                        ? '<span class="status-verified">✔ Verified</span>'
+                        : '<span class="status-unverified">✖ Not Verified</span>';
+
+                    let row = `
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.username}</td>
+                        <td>${user.email}</td>
+                        <td>${roleBadge}</td>
+                        <td>${statusBadge}</td>
+                        <td class="action-buttons">
+                            <a href="/delete-user/${user.id}" class="btn-delete">Delete</a>
+                            <a href="/toggle-role/${user.id}" class="btn-role">Toggle Role</a>
+                        </td>
+                    </tr>
+                `;
+
+                    tableBody.innerHTML += row;
+                });
+
+            });
+
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container contact-page mt-5">
+
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="glass-card">
+                <div class="text-center mb-5">
+                    <h2 class="gradient-title">📩 Contact Us</h2>
+                    <p class="subtitle">We would love to hear from you</p>
+                </div>
+                {% if success %}
+                <div id="successAlert" class="alert alert-success alert-dismissible fade show">
+                    {{ success }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                {% endif %}
+                <div class="contact-container">
+
+                    <form method="POST" class="contact-form">
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="text" name="mobile" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Village / Location</label>
+                            <input type="text" name="location">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Crop Type</label>
+                            <input type="text" name="crop">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Problem Type</label>
+                            <select name="problem_type">
+                                <option>Disease Issue</option>
+                                <option>Fertilizer Guidance</option>
+                                <option>Pesticide Recommendation</option>
+                                <option>Crop Growth Problem</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="send-btn">
+                            Send Message
+                        </button>
+
+                    </form>
+                    <script>
+
+                        setTimeout(function () {
+
+                            let alert = document.getElementById("successAlert");
+
+                            if (alert) {
+                                alert.style.transition = "opacity 0.5s";
+                                alert.style.opacity = "0";
+                                setTimeout(() => alert.remove(), 500);
+                            }
+
+                        }, 4000);
+
+                    </script>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

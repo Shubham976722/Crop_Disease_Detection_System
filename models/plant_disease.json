@@ -1,0 +1,860 @@
+[
+    {
+        "name": "Apple___Apple_scab",
+        "cause": "Apple scab is caused by the fungus Venturia inaequalis, which overwinters in fallen leaves and spreads during cool, wet spring conditions. Airborne spores infect young leaves and fruit, creating dark lesions and premature defoliation. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove and destroy infected fallen leaves to reduce fungal spores. Apply preventive fungicides during early growth stages. Choose resistant apple varieties and ensure proper pruning to improve air circulation and reduce moisture retention. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "सेब का स्कैब रोग",
+                "cause": "यह रोग Venturia inaequalis नामक फफूंद के कारण होता है। ठंडे और गीले मौसम में यह तेजी से फैलता है और पत्तियों व फलों पर काले धब्बे बनाता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "गिरी हुई संक्रमित पत्तियों को हटाएं और नष्ट करें। शुरुआती अवस्था में फफूंदनाशक का छिड़काव करें और रोग प्रतिरोधक किस्मों का चयन करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "सफरचंद स्कॅब रोग",
+                "cause": "हा रोग Venturia inaequalis बुरशीमुळे होतो. थंड व ओलसर हवामानात हा रोग जलद पसरतो आणि पानांवर व फळांवर काळे डाग तयार होतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पाने गोळा करून नष्ट करा. सुरुवातीच्या टप्प्यात बुरशीनाशक फवारणी करा आणि रोगप्रतिकारक वाण लावा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Mancozeb 75% WP + NPK 19-19-19 Foliar Spray",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=mancozeb+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=mancozeb+fungicide"
+        }
+    },
+    {
+        "name": "Apple___Black_rot",
+        "cause": "Black rot is caused by the fungus Botryosphaeria obtusa. It infects fruit, leaves, and bark, surviving in dead wood and mummified fruit. Warm, humid weather encourages rapid fungal spread throughout orchards. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Prune and remove infected branches and dried fruits. Maintain orchard sanitation and apply recommended fungicides during the growing season. Support tree health through balanced fertilization and adequate irrigation management. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "सेब का ब्लैक रॉट",
+                "cause": "यह रोग Botryosphaeria obtusa फफूंद के कारण होता है। गर्म और आर्द्र मौसम में यह फल, पत्तियों और शाखाओं को संक्रमित करता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित शाखाओं और फलों को हटाएं। बढ़वार के दौरान उचित फफूंदनाशक का प्रयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "सफरचंद ब्लॅक रॉट",
+                "cause": "हा रोग Botryosphaeria obtusa बुरशीमुळे होतो. उष्ण आणि दमट हवामानात फळे व पाने संक्रमित होतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित फांद्या व फळे काढून टाका. योग्य बुरशीनाशकाची फवारणी करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Copper Oxychloride + Balanced NPK 20-20-20",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=copper+oxy+chloride",
+            "flipkart": "https://www.flipkart.com/search?q=copper+oxy+chloride"
+        }
+    },
+    {
+        "name": "Apple___Cedar_apple_rust",
+        "cause": "Cedar apple rust is caused by the fungus Gymnosporangium juniperi-virginianae, which requires both apple and juniper hosts to complete its life cycle. It spreads through windborne spores during moist spring conditions. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove nearby juniper plants where possible to break the disease cycle. Use resistant apple varieties and apply fungicide sprays during early infection stages to protect developing leaves and fruit. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "सेडर एप्पल रस्ट",
+                "cause": "यह रोग Gymnosporangium juniperi-virginianae फफूंद से होता है और गीले मौसम में तेजी से फैलता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "पास के जुनिपर पौधों को हटाएं और समय पर फफूंदनाशक का प्रयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "सिडर अॅपल रस्ट",
+                "cause": "हा रोग Gymnosporangium बुरशीमुळे होतो आणि ओलसर हवेत वाढतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "जवळील जुनिपर झाडे काढा आणि बुरशीनाशक फवारणी करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Azoxystrobin Fungicide + Micronutrient Spray",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=azoxystrobin",
+            "flipkart": "https://www.flipkart.com/search?q=azoxystrobin"
+        }
+    },
+    {
+        "name": "Apple___healthy",
+        "cause": "The plant shows no visible disease symptoms. Leaf coloration, growth pattern, and fruit development appear normal, indicating favorable environmental and nutritional conditions supporting healthy development. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Continue proper irrigation, balanced fertilization, pruning, and pest monitoring. Maintain orchard sanitation and regular inspection to prevent potential infections and ensure sustained healthy growth. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ सेब पौधा",
+                "cause": "पौधे में किसी रोग के लक्षण नहीं हैं। पत्तियां और फल सामान्य रूप से विकसित हो रहे हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित खाद, सिंचाई और नियमित निरीक्षण जारी रखें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी सफरचंद झाड",
+                "cause": "झाडावर कोणताही रोग दिसत नाही. पाने व फळे व्यवस्थित आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य खत, पाणी आणि नियमित तपासणी सुरू ठेवा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Organic Compost + Vermicompost + NPK 20-20-20",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=organic+compost",
+            "flipkart": "https://www.flipkart.com/search?q=vermicompost"
+        }
+    },
+    {
+        "name": "Healthy Leaf Image",
+        "cause": "No identifiable plant or leaf structure was detected in the uploaded image. The system could not classify any disease because the input does not contain a recognizable crop leaf. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Please upload a clear image containing a visible plant leaf under good lighting conditions. Ensure the leaf occupies most of the image frame for accurate disease detection. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ ब्लूबेरी पौधा",
+                "cause": "पौधा स्वस्थ है और किसी प्रकार का संक्रमण नहीं दिख रहा है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "उचित सिंचाई और पोषण बनाए रखें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी पान छवि",
+                "cause": "अपलोड की गई छवि में कोई पहचान योग्य पौधा या पत्ती संरचना नहीं मिली। सिस्टम किसी भी रोग को वर्गीकृत नहीं कर सका क्योंकि इनपुट में कोई मान्यता प्राप्त फसल पत्ती नहीं है। हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "कृपया एक स्पष्ट छवि अपलोड करें जिसमें अच्छी रोशनी के तहत एक दिखाई देने वाली पौधे की पत्ती हो। सटीक रोग पहचान के लिए सुनिश्चित करें कि पत्ती छवि फ्रेम का अधिकांश हिस्सा घेरती है। संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Not Applicable",
+        "products": {
+            "amazon": "",
+            "flipkart": ""
+        }
+    },
+    {
+        "name": "Blueberry___healthy",
+        "cause": "The blueberry plant appears healthy without visible disease symptoms. Leaves maintain proper coloration and structure, suggesting optimal environmental conditions and adequate nutrient availability. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain consistent irrigation, soil acidity levels, and balanced fertilization. Monitor regularly for pests and fungal infections to ensure continued plant health and productive yield. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ ब्लूबेरी पौधा",
+                "cause": "पौधा स्वस्थ है और किसी प्रकार का संक्रमण नहीं दिख रहा है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "उचित सिंचाई और पोषण बनाए रखें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी ब्लूबेरी",
+                "cause": "वनस्पती पूर्णपणे निरोगी आहे. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य पाणी व खत द्या. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Ammonium Sulfate + Organic Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=ammonium+sulfate",
+            "flipkart": "https://www.flipkart.com/search?q=ammonium+sulfate"
+        }
+    },
+    {
+        "name": "Cherry___Powdery_mildew",
+        "cause": "Powdery mildew in cherry is caused by the fungus Podosphaera clandestina. It develops in moderate temperatures with high humidity, forming white powdery growth on leaves and young shoots. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Apply sulfur-based fungicides at early stages of infection. Improve air circulation through pruning and avoid overhead watering to reduce humidity around foliage. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "चेरी का पाउडरी मिल्ड्यू",
+                "cause": "यह रोग फफूंद के कारण होता है और पत्तियों पर सफेद पाउडर जैसा परत बनाता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "सल्फर आधारित दवा का छिड़काव करें और हवा का संचार बढ़ाएं। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "चेरी पावडरी मिल्ड्यू",
+                "cause": "हा रोग बुरशीमुळे होतो आणि पानांवर पांढरी पावडर दिसते. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "सल्फर फवारणी करा आणि हवा खेळती ठेवा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Sulfur Fungicide + Balanced NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=sulfur+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=sulfur+fungicide"
+        }
+    },
+    {
+        "name": "Cherry___healthy",
+        "cause": "No signs of fungal, bacterial, or viral infection are visible. The plant exhibits healthy leaf texture and consistent growth patterns. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain orchard hygiene, proper irrigation scheduling, and balanced nutrient application to preserve healthy growth and prevent future disease outbreaks. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ चेरी पौधा",
+                "cause": "कोई रोग के लक्षण नहीं हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित पोषण और देखभाल जारी रखें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी चेरी",
+                "cause": "कोणताही रोग नाही. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य देखभाल सुरू ठेवा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Organic Manure + NPK 20-20-20",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=organic+manure",
+            "flipkart": "https://www.flipkart.com/search?q=organic+manure"
+        }
+    },
+    {
+        "name": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+        "cause": "Gray leaf spot is caused by Cercospora zeae-maydis. It spreads via spores in humid conditions and causes rectangular gray lesions that reduce photosynthetic efficiency. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Use resistant corn hybrids and apply fungicides when necessary. Practice crop rotation and residue management to minimize fungal survival in fields. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "मक्का ग्रे लीफ स्पॉट",
+                "cause": "यह रोग फफूंद के कारण होता है और पत्तियों पर भूरे धब्बे बनाता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "प्रतिरोधी किस्म लगाएं और आवश्यकतानुसार फफूंदनाशक का प्रयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "मका ग्रे लीफ स्पॉट",
+                "cause": "हा रोग बुरशीमुळे होतो आणि पानांवर तपकिरी डाग येतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "रोगप्रतिकारक वाण वापरा आणि फवारणी करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Propiconazole + Urea Based Fertilizer",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=propiconazole",
+            "flipkart": "https://www.flipkart.com/search?q=propiconazole"
+        }
+    },
+    {
+        "name": "Corn___Common_rust",
+        "cause": "Common rust is caused by Puccinia sorghi and spreads through airborne spores. It forms reddish-brown pustules on leaves, reducing plant vigor in moderate temperatures. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Plant resistant hybrids and apply fungicides during severe infection. Monitor crops regularly and avoid excessive nitrogen fertilization that promotes susceptibility. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "मक्का का रस्ट रोग",
+                "cause": "यह रोग पत्तियों पर लाल-भूरे फफूंद के धब्बे बनाता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "प्रतिरोधी बीज लगाएं और समय पर दवा छिड़कें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "मका रस्ट रोग",
+                "cause": "पानांवर लालसर तपकिरी डाग येतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "रोगप्रतिकारक बियाणे वापरा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Azoxystrobin + NPK 20-20-20",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=azoxystrobin",
+            "flipkart": "https://www.flipkart.com/search?q=azoxystrobin"
+        }
+    },
+    {
+        "name": "Corn___Northern_Leaf_Blight",
+        "cause": "Northern leaf blight is caused by Exserohilum turcicum. It creates long, cigar-shaped lesions on leaves and spreads under cool, moist conditions. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Select resistant corn varieties and apply fungicides when infection risk is high. Practice crop rotation and remove infected residue after harvest. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "उत्तरी पत्ती ब्लाइट",
+                "cause": "यह रोग फफूंद के कारण होता है और पत्तियों पर लंबे, सिगरेट आकार के धब्बे बनाता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "प्रतिरोधी किस्म चुनें और संक्रमण के जोखिम के समय प्रयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "उत्तरी पानी ब्लाइट",
+                "cause": "हा रोग बुरशीमुळे होतो आणि पानांवर सुद्धा, सिगरेटशीपले डाग येतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "रोगप्रतिकारक किस्मचे मन मध्ये महत्व महत्वपूर्ण. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Mancozeb + Balanced Nitrogen Fertilizer",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=mancozeb+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=mancozeb+fungicide"
+        }
+    },
+    {
+        "name": "Corn___healthy",
+        "cause": "The corn plant shows no disease symptoms. Leaf color, structure, and growth appear normal under current environmental conditions. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Continue proper irrigation, fertilization, and pest monitoring practices to maintain healthy crop development. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ मक्का फसल",
+                "cause": "फसल में किसी भी प्रकार का रोग या संक्रमण दिखाई नहीं दे रहा है। पत्तियां हरी, मजबूत और सही आकार में हैं। पौधे की वृद्धि सामान्य और संतुलित है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "सिंचाई, संतुलित खाद और नियमित खेत निरीक्षण जारी रखें। समय-समय पर कीट नियंत्रण और खरपतवार सफाई करते रहें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी मका पीक",
+                "cause": "पिकावर कोणताही रोग किंवा संसर्ग दिसत नाही. पाने हिरवी, मजबूत आणि योग्य आकाराची आहेत. वाढ व्यवस्थित आहे. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "नियमित पाणी, संतुलित खत आणि शेताची तपासणी सुरू ठेवा. तण नियंत्रण आणि कीड व्यवस्थापन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Urea + DAP + Organic Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=urea+fertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=dap+fertilizer"
+        }
+    },
+    {
+        "name": "Grape___Black_rot",
+        "cause": "Black rot in grapes is caused by Guignardia bidwellii. It infects leaves and fruit during warm, wet weather, leading to shriveled, darkened berries. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Prune infected plant parts and remove mummified berries. Apply preventive fungicides during early growing stages and maintain vineyard sanitation. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "ग्रेप के काला घाम",
+                "cause": "ग्रेप में काला घाम गुइग्नार्डिया बिडवेली से होता है। यह गर्म, गीली मौसम में पत्तियों और फलों को संक्रमित करता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पौधे के हिस्से काटें और ममीफाइड बेरीज़ हटाएं। प्रारंभिक विकास के समय प्रतिरोधी कवकों का प्रयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "ग्रेपचे काळा मसळा",
+                "cause": "ग्रेपमध्ये काळा मसळा हा Guignardia bidwellii सुद्धा होतो. हा पत्त्यांवर आणि फळावर संक्रमण करतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पौध्याचे भाग कापून ममीफाइड बेरीजही हटवा. पहिल्या प्रसन्नपणीच्या सुद्धा प्रतिरोधी कवकोंचे सुद्धा प्रयोग करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Copper Fungicide + Potassium Fertilizer",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=copper+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=copper+fungicide"
+        }
+    },
+    {
+        "name": "Grape___Esca_(Black_Measles)",
+        "cause": "Esca disease is caused by a complex of fungi including Phaeomoniella chlamydospora. It affects vascular tissues, causing leaf discoloration and vine decline. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove infected wood and avoid mechanical injuries to vines. Maintain vineyard hygiene and monitor for early symptoms to prevent spread. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "ग्रेप के एस्का (काला मसळा)",
+                "cause": "एस्का रोग फंगी के एक जटिल समूह से होता है, जिसमें Phaeomoniella chlamydospora शामिल है। यह वास्कुलर ऊतकों को प्रभावित करता है, पत्तियों के रंग में परिवर्तन और वाइन की पतंग की कमी का कारण बनता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित लकड़ी हटाएं और पौधों में मैकेनिकल क्षति से बचें। वाइनयार्ड स्वच्छता को सुनिश्चित करें और प्रारंभिक सम्पति में प्रतिरोधी प्रयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "ग्रेपचे एस्का (काळा मसळा)",
+                "cause": "एस्का रोग हा Phaeomoniella chlamydospora सुद्धा होतो. हे संवाहक संसाधनांवर प्रभावित करते, पत्त्याचे रंगवलीचे परिणाम महत्त्वपूर्ण होऊन, पौधयाची महत्त्वपूर्ण कमी होऊन. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित मुद्रणीचे हटवा. पौधयाची महत्त्वपूर्ण सुदुष्‍कलपणे सुदुष्‍कलपणे सुदुष्‍कलपणे सुदुष्‍कलपणे. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Bio-Fungicide + Balanced NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=bio+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=bio+fungicide"
+        }
+    },
+    {
+        "name": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "cause": "Leaf blight is caused by Pseudocercospora vitis. It produces brown lesions and thrives in warm, humid vineyard environments. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Apply appropriate fungicides and improve air circulation through canopy management. Remove infected leaves and maintain vineyard sanitation. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "ग्रेप के पत्ती का ब्लाइट (इसारिओपिस लीफ स्पॉट)",
+                "cause": "पत्ती का ब्लाइट Pseudocercospora vitis से होता है। यह भूरे रंग के रोग के संकेंद्रित करता है और गर्म, गीली मौसम में प्रभावित होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "उचित कवकों का प्रयोग करें और पातली प्रबंधन से हवा की संचालन में सुधार करें। संक्रमित पत्तियों को हटाएं और वाइनयार्ड स्वच्छता को सुनिश्चित करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "ग्रेपचे पत्तीचे ब्लाइट (इसारिओपिस लीफ स्पॉट)",
+                "cause": "पत्तीचे ब्लाइट Pseudocercospora vitis सुद्धा होतो. हे भूरे रंगकड़िल मधले प्रभावित करतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "उचित कवकोंचे प्रयोग करा. पातली प्रबंधन मधून हवा मधले सुधारणा. संक्रमित पत्तीही हटवा. वाइनयार्ड स्वच्छता मधले सुदुष्‍कलपणे. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Azoxystrobin + Organic Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=azoxystrobin",
+            "flipkart": "https://www.flipkart.com/search?q=azoxystrobin"
+        }
+    },
+    {
+        "name": "Grape___healthy",
+        "cause": "The grapevine appears healthy with no visible disease symptoms. Leaves are properly structured and free from discoloration. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain regular pruning, irrigation, and fertilization. Continue monitoring for pests and fungal diseases to ensure long-term productivity. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ अंगूर बेल",
+                "cause": "बेल में किसी भी प्रकार का रोग नहीं है। पत्तियां हरी और स्वस्थ हैं तथा फल सामान्य रूप से विकसित हो रहे हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित खाद, सिंचाई और नियमित निरीक्षण जारी रखें। बेलों की छंटाई समय पर करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी द्राक्ष वेल",
+                "cause": "वेलीवर कोणताही रोग नाही. पाने हिरवी व फळे व्यवस्थित आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य खत व पाणी द्या आणि नियमित छाटणी करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Potassium Rich Fertilizer + Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=potassium+fertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=potassium+fertilizer"
+        }
+    },
+    {
+        "name": "Orange___Haunglongbing_(Citrus_greening)",
+        "cause": "Citrus greening is caused by Candidatus Liberibacter species and spread by psyllid insects. It leads to yellowing leaves, misshapen fruit, and tree decline. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Control psyllid populations using insecticides and remove infected trees promptly. Use certified disease-free planting material and monitor orchards regularly. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "सिट्रस ग्रीनिंग रोग",
+                "cause": "इस रोग में पत्तियां पीली हो जाती हैं और फल छोटे व खराब बनते हैं। समय पर इलाज न करने पर पूरा पेड़ कमजोर हो सकता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पेड़ों को हटाएं और कीट नियंत्रण करें। स्वस्थ पौध सामग्री का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "सिट्रस ग्रीनिंग रोग",
+                "cause": "या रोगामुळे पाने पिवळी होतात आणि फळे नीट विकसित होत नाहीत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित झाडे काढून टाका आणि कीड नियंत्रण करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Micronutrient Spray + Zinc Sulfate",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=zinc+sulfate+fertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=zinc+sulfate"
+        }
+    },
+    {
+        "name": "Peach___Bacterial_spot",
+        "cause": "Peach bacterial spot is caused by the bacterium Xanthomonas campestris pv. pruni. The pathogen survives in infected twigs and plant debris and spreads through rain splashes, wind, insects, and contaminated tools. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Plant resistant peach varieties and use certified disease-free planting material. Apply copper-based bactericides during early leaf development to reduce bacterial spread. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "आड़ू बैक्टीरियल स्पॉट",
+                "cause": "पत्तियों और फलों पर छोटे काले धब्बे दिखाई देते हैं। बारिश और नमी में यह तेजी से फैलता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित भाग हटाएं और कॉपर आधारित दवा का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "पीच बॅक्टेरियल स्पॉट",
+                "cause": "पानांवर आणि फळांवर छोटे काळे डाग दिसतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित भाग काढून टाका आणि कॉपर फवारणी करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Copper Oxychloride + Balanced NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=copper+oxy+chloride",
+            "flipkart": "https://www.flipkart.com/search?q=copper+oxy+chloride"
+        }
+    },
+    {
+        "name": "Peach___healthy",
+        "cause": "The peach plant shows no visible symptoms of fungal, bacterial, or viral infection. Leaves appear uniformly green with proper structure. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain proper irrigation scheduling, balanced fertilization, seasonal pruning, pest monitoring, and orchard sanitation practices. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ आड़ू",
+                "cause": "आड़ू पौधा किसी भी प्रकार के रोग या कीट के नुकसान के संकेत नहीं देता। पत्तियां समान रूप से हरी होती हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित खाद, सिंचाई, प्रतिदिन की निरीक्षण और पेड़ों की साफ-सुथरी करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी पीच",
+                "cause": "पीच पौधा कोणताही रोग नाही. पाने समान हिरवे आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य खत, सिंचाई, मुद्रण मध्ये संचालन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Organic Compost + NPK 20-20-20",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=npk+20-20-20",
+            "flipkart": "https://www.flipkart.com/search?q=npk+20-20-20"
+        }
+    },
+    {
+        "name": "Pepper,_bell___Bacterial_spot",
+        "cause": "Bell pepper bacterial spot is caused by Xanthomonas campestris pv. vesicatoria. It spreads through rain splash, irrigation water, contaminated tools, and handling. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Use certified disease-free seeds and plant resistant pepper varieties. Apply copper-based bactericides during early stages of infection. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "पींटर बैक्टीरियल स्पॉट",
+                "cause": "पींटर पर छोटे काले धब्बे दिखाई देते हैं। बारिश और नमी में यह तेजी से फैलता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पेड़ों को हटाएं और कॉपर आधारित दवा का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "पींटर बॅक्टेरियल स्पॉट",
+                "cause": "पींटरवर काळे डाग होतात. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पेड़ काढून टाका आणि कॉपरचा प्रयोग करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Copper Fungicide + NPK 20-20-20",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=copper+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=copper+fungicide"
+        }
+    },
+    {
+        "name": "Pepper,_bell___healthy",
+        "cause": "The bell pepper plant shows no visible symptoms of disease or pest damage. Leaves are uniformly green without spotting. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Continue balanced fertilization, proper irrigation scheduling, weed control, and regular pest monitoring. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ पींटर",
+                "cause": "पींटर पौधा किसी भी प्रकार के रोग या कीट के नुकसान के संकेत नहीं देता। पत्तियां समान रूप से हरी होती हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित खाद, सिंचाई, प्रतिदिन की निरीक्षण और पेड़ों की साफ-सुथरी करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी पींटर",
+                "cause": "पींटर पौधा कोणताही रोग नाही. पाने समान हिरवे आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य खत, सिंचाई, मुद्रण मध्ये संचालन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "DAP + Organic Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=dap+fertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=dap+fertilizer"
+        }
+    },
+    {
+        "name": "Potato___Early_blight",
+        "cause": "Potato early blight is caused by the fungus Alternaria solani, which thrives in warm temperatures and high humidity. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove infected leaves promptly and apply recommended fungicides at early disease stages. Practice crop rotation. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "पोटेटो शीर्ष ब्लाइट",
+                "cause": "पोटेटो पर पहले दिखाई देणारे काळे धब्बे होतात। उष्णता आणि उच्च आर्द्रता मध्ये हा रोग तेजी से फैलतो. यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पान काढून टाका आणि सूचित केलेली प्रकारची कम्पोजिट कम्पोजिट करा. संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "पोटेटो हवी मुद्रण",
+                "cause": "पोटेटोवर पहिले काळे डाग होतात. हवी मध्ये हा रोग सुरू होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पान काढून टाका आणि सूचित केलेली प्रकारची कम्पोजिट कम्पोजिट करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Mancozeb 75% WP + NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=mancozeb",
+            "flipkart": "https://www.flipkart.com/search?q=mancozeb"
+        }
+    },
+    {
+        "name": "Potato___Late_blight",
+        "cause": "Late blight is caused by Phytophthora infestans, a water mold that spreads rapidly in cool, wet conditions. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Use certified disease-free seed potatoes and resistant varieties. Apply preventive fungicides during high-risk weather conditions. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "पोटेटो देरी से ब्लाइट",
+                "cause": "पोटेटो पर देरी से काळे धब्बे होतात। ठंढी आणि नमी मध्ये हा रोग तेजी से फैलतो. यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पान काढून टाका आणि सूचित केलेली प्रकारची कम्पोजिट कम्पोजिट करा. संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "पोटेटो हवी मुद्रण",
+                "cause": "पोटेटोवर पहिले काळे डाग होतात. हवी मध्ये हा रोग सुरू होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पान काढून टाका आणि सूचित केलेली प्रकारची कम्पोजिट कम्पोजिट करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Metalaxyl + Potassium Fertilizer",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=metalaxyl",
+            "flipkart": "https://www.flipkart.com/search?q=metalaxyl"
+        }
+    },
+    {
+        "name": "Potato___healthy",
+        "cause": "The potato plant appears healthy with no visible signs of fungal, bacterial, or viral infection. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain proper irrigation, balanced fertilization, pest monitoring, and field sanitation. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ पोटेटो",
+                "cause": "पोटेटो पौधा किसी भी प्रकार के रोग या कीट के नुकसान के संकेत नहीं देता। पत्तियां समान रूप से हरी होती हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित खाद, सिंचाई, प्रतिदिन की निरीक्षण और पेड़ों की साफ-सुथरी करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी पोटेटो",
+                "cause": "पोटेटो पौधा कोणताही रोग नाही. पाने समान हिरवे आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य खत, सिंचाई, मुद्रण मध्ये संचालन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "DAP + Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=dap+fertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=dap+fertilizer"
+        }
+    },
+    {
+        "name": "Raspberry___healthy",
+        "cause": "The raspberry plant shows no evidence of disease symptoms such as leaf discoloration or wilting. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Continue regular pruning, irrigation, and nutrient management practices. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ रस्पबेरी",
+                "cause": "रस्पबेरी पौधा किसी भी प्रकार के रोग या कीट के नुकसान के संकेत नहीं देता। पत्तियां समान रूप से हरी होती हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "नियमित प्रशिक्षण, सिंचाई, और पोषक पदार्थ प्रबंधन के अनुसरण करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी रस्पबेरी",
+                "cause": "रस्पबेरी पौधा कोणताही रोग नाही. पाने समान हिरवे आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य प्रशिक्षण, सिंचाई, मुद्रण मध्ये संचालन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Organic Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=organic+compost",
+            "flipkart": "https://www.flipkart.com/search?q=organic+compost"
+        }
+    },
+    {
+        "name": "Soybean___healthy",
+        "cause": "The soybean plant appears free from visible disease or pest damage. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain proper irrigation, soil fertility management, and regular pest scouting. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ सोयबीन",
+                "cause": "सोयबीन पौधा किसी भी प्रकार के रोग या कीट के नुकसान के संकेत नहीं देता। पत्तियां समान रूप से हरी होती हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित सिंचाई, मिट्टी के पोषक पदार्थ प्रबंधन, आणि कीट मध्ये संचालन करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी सोयबीन",
+                "cause": "सोयबीन पौधा कोणताही रोग नाही. पाने समान हिरवे आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य सिंचाई, मिट्टी के पोषक पदार्थ प्रबंधन, आणि कीट मध्ये संचालन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Rhizobium Biofertilizer + NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=biofertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=biofertilizer"
+        }
+    },
+    {
+        "name": "Squash___Powdery_mildew",
+        "cause": "Powdery mildew in squash is caused by fungal pathogens such as Erysiphe cichoracearum. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Apply sulfur-based fungicides at early stages of infection. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ स्क्वाश",
+                "cause": "स्क्वाश में पाउडरी माइलडेव फंगल पैथोजेन जैसे Erysiphe cichoracearum के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमण के प्रारंभिक चरणों में सल्फर-आधारित फंगाइसिड का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी स्क्वाश",
+                "cause": "स्क्वाशवर पाउडरी माइलडेव फंगल पैथोजेन जैसे Erysiphe cichoracearum के कारण होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमण के प्रारंभिक चरणों मध्ये सल्फर-आधारित फंगाइसिडचा उपयोग करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Sulfur Fungicide + Balanced NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=sulfur+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=sulfur+fungicide"
+        }
+    },
+    {
+        "name": "Strawberry___Leaf_scorch",
+        "cause": "Strawberry leaf scorch is caused by the fungus Diplocarpon earlianum. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove infected leaves and apply fungicides. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ स्ट्रॉबेरी",
+                "cause": "स्ट्रॉबेरी पत्ती जलना फंगल पैथोजेन Diplocarpon earlianum के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पत्तियां हटाएं और फंगाइसिड का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी स्ट्रॉबेरी",
+                "cause": "स्ट्रॉबेरी पाने जलना फंगल पैथोजेन Diplocarpon earlianum के कारण होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पाने हटवा आणि फंगाइसिडचा वापर करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Copper Fungicide + NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=copper+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=copper+fungicide"
+        }
+    },
+    {
+        "name": "Strawberry___healthy",
+        "cause": "The strawberry plant shows no visible disease symptoms. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Continue balanced fertilization, pest monitoring, and irrigation management. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ रस्पबेरी",
+                "cause": "रस्पबेरी पौधा किसी भी प्रकार के रोग या कीट के नुकसान के संकेत नहीं देता। पत्तियां समान रूप से हरी होती हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "नियमित प्रशिक्षण, सिंचाई, और पोषक पदार्थ प्रबंधन के अनुसरण करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी रस्पबेरी",
+                "cause": "रस्पबेरी पौधा कोणताही रोग नाही. पाने समान हिरवे आहेत. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "योग्य प्रशिक्षण, सिंचाई, मुद्रण मध्ये संचालन करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Potassium Fertilizer + Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=potassium+fertilizer",
+            "flipkart": "https://www.flipkart.com/search?q=potassium+fertilizer"
+        }
+    },
+    {
+        "name": "Tomato___Bacterial_spot",
+        "cause": "Tomato bacterial spot is caused by Xanthomonas species and spreads through contaminated seeds and rain splash. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Apply copper-based bactericides and practice crop rotation. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "स्वस्थ टॉमेटो",
+                "cause": "टॉमेटो में बैक्टीरियल स्पॉट Xanthomonas species के कारण होता है और संक्रमित बीजों और बारिश के प्रभाव से फैलता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "कॉपर-आधारित बैक्टीरिसाइड का उपयोग करें और क्रॉप रोटेशन का प्रयत्न करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो मध्ये Xanthomonas species के कारण बैक्टीरियल स्पॉट होतो. संक्रमित बीजाणुंचा प्रभाव, पाऊसाचा प्रभाव मध्ये सुद्धा होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "कॉपर-आधारित बैक्टीरिसाइडचा वापर करा, क्रॉप रोटेशनचा प्रयत्न करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Copper Fungicide + NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=copper+fungicide",
+            "flipkart": "https://www.flipkart.com/search?q=copper+fungicide"
+        }
+    },
+    {
+        "name": "Tomato___Early_blight",
+        "cause": "Early blight in tomato is caused by the fungus Alternaria solani. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove infected leaves and apply recommended fungicides. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में प्रारंभिक ब्लाइट",
+                "cause": "टॉमेटो में प्रारंभिक ब्लाइट फंगल पैथोजेन Alternaria solani के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पत्तियां हटाएं और अनुकूल फंगाइसिड का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो मध्ये Alternaria solani के कारण प्रारंभिक ब्लाइट होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पत्ती हटवा आणि अनुकूल फंगाइसिडचा वापर करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Mancozeb + NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=mancozeb",
+            "flipkart": "https://www.flipkart.com/search?q=mancozeb"
+        }
+    },
+    {
+        "name": "Tomato___Late_blight",
+        "cause": "Late blight is caused by Phytophthora infestans. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Plant resistant varieties and apply protective fungicides. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में देरी से ब्लाइट",
+                "cause": "देरी से ब्लाइट Phytophthora infestans के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "प्रतिरोधी प्रकार के बीज लगाएं और सुरक्षात्मक फंगाइसिड का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "देरी से ब्लाइट Phytophthora infestans के कारण होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "प्रतिरोधी प्रकारचा बीज लगवा, सुरक्षात्मक फंगाइसिडचा वापर करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Metalaxyl + Potassium Fertilizer",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=metalaxyl",
+            "flipkart": "https://www.flipkart.com/search?q=metalaxyl"
+        }
+    },
+    {
+        "name": "Tomato___Leaf_Mold",
+        "cause": "Tomato leaf mold is caused by the fungus Passalora fulva. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Improve ventilation and apply recommended fungicides. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में पत्ती का रोग",
+                "cause": "टॉमेटो पत्ती का रोग Passalora fulva फंगस के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "वातावरण सुधारें और अनुकूल फंगाइसिड का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो मध्ये Passalora fulva फंगस के कारण पत्तीचा रोग होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "वातावरण सुधारा, अनुकूल फंगाइसिडचा वापर करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Azoxystrobin + Balanced NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=azoxystrobin",
+            "flipkart": "https://www.flipkart.com/search?q=azoxystrobin"
+        }
+    },
+    {
+        "name": "Tomato___Septoria_leaf_spot",
+        "cause": "Septoria leaf spot is caused by the fungus Septoria lycopersici. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove infected leaves and apply preventive fungicides. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में सेप्टोरिया पत्ती का धब्बा",
+                "cause": "सेप्टोरिया पत्ती का धब्बा Septoria lycopersici फंगस के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पत्तियां हटाएं और सुरक्षात्मक फंगाइसिड का उपयोग करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "सेप्टोरिया पत्ती का धब्बा Septoria lycopersici फंगस के कारण होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पत्ती हटवा, सुरक्षात्मक फंगाइसिडचा वापर करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Mancozeb + Balanced NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=mancozeb",
+            "flipkart": "https://www.flipkart.com/search?q=mancozeb"
+        }
+    },
+    {
+        "name": "Tomato___Spider_mites Two-spotted_spider_mite",
+        "cause": "Two-spotted spider mites feed on plant sap and thrive in hot dry conditions. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Use miticides or insecticidal soaps and encourage natural predators. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में एक दो बिंदु वाले स्पाइडर माइट",
+                "cause": "दो बिंदु वाले स्पाइडर माइट पौधे के पत्ती का साप खा कर जीवित रहते हैं और गर्मी में सूखी हवा में प्रचलित होते हैं। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "माइटसाइड्स या कीटनाशक सोप का उपयोग करें और प्राकृतिक प्रतिद्वंद्वी को प्रोत्साहित करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "दो बिंदुवाले स्पाइडर माइट पौध्याचा पत्तीचा सापखळा करतो, गरमीच्या सूखल्या हवेमध्ये प्रचलित होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "माइटसाइड्स किंवा कीटनष्टक सोपचा वापर करा, प्राकृतिक प्रतिद्वंद्वीला प्रोत्साहित करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Neem Oil Spray + NPK",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=neem+oil+spray",
+            "flipkart": "https://www.flipkart.com/search?q=neem+oil+spray"
+        }
+    },
+    {
+        "name": "Tomato___Target_Spot",
+        "cause": "Target spot is caused by Corynespora cassiicola fungus. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Apply appropriate fungicides and improve air circulation. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में टारगेट स्पॉट",
+                "cause": "टारगेट स्पॉट Corynespora cassiicola फंगस के कारण होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "अनुकूल फंगाइसिड का उपयोग करें और हवा की प्रवाह सुधारें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टारगेट स्पॉट Corynespora cassiicola फंगस के कारण होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "अनुकूल फंगाइसिडचा वापर करा, हवा प्रवाह सुधारा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Propiconazole + Potassium Fertilizer",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=propiconazole",
+            "flipkart": "https://www.flipkart.com/search?q=propiconazole"
+        }
+    },
+    {
+        "name": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "cause": "Tomato yellow leaf curl virus is transmitted by whiteflies. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Control whitefly populations and remove infected plants. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में टॉमेटो पीली पत्ती कर्ल वायरस",
+                "cause": "टॉमेटो पीली पत्ती कर्ल वायरस व्हाइटफ्लाई के द्वारा संचरित होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "व्हाइटफ्लाई की संख्या को नियंत्रित करें और संक्रमित पौधे हटाएं। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो पीली पत्ती कर्ल वायरस व्हाइटफ्लाई के द्वारा संचरित होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "व्हाइटफ्लाईचा संख्या नियंत्रित करा, संक्रमित पौधे हटवा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Imidacloprid + Micronutrient Spray",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=imidacloprid",
+            "flipkart": "https://www.flipkart.com/search?q=imidacloprid"
+        }
+    },
+    {
+        "name": "Tomato___Tomato_mosaic_virus",
+        "cause": "Tomato mosaic virus spreads through contaminated tools and direct contact. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Remove infected plants and disinfect tools. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "टॉमेटो में टॉमेटो मोज़ेक वायरस",
+                "cause": "टॉमेटो मोज़ेक वायरस संदूषित उपकरणों और सीधे संपर्क के माध्यम से प्रसारित होता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संक्रमित पौधे हटाएं और उपकरणों की निर्मलता सुनिश्चित करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो मोज़ेक वायरस संदूषित उपकरणांच्या माध्यमाने आणि सीध्या संपर्काने प्रसारित होतो. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संक्रमित पौधे हटवा, उपकरणे सुच्ची करा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "Micronutrient Spray + Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=micronutrient+spray",
+            "flipkart": "https://www.flipkart.com/search?q=micronutrient+spray"
+        }
+    },
+    {
+        "name": "Tomato___healthy",
+        "cause": "The tomato plant shows no visible symptoms of infection or pest damage. This disease commonly develops under favorable environmental conditions such as high humidity, poor air circulation, excessive moisture, or infected crop residue depending on the crop type. The infection may spread through wind, rain splashes, contaminated soil, irrigation water, insects, infected seeds, farming tools, or nearby infected plants. Early symptoms usually appear on leaves, stems, or fruits and may include spots, discoloration, curling, wilting, fungal growth, or reduced plant vigor. If proper disease management is not followed, the infection can spread rapidly and reduce crop growth, yield quality, and overall productivity.",
+        "cure": "Maintain balanced fertilization, irrigation, and regular monitoring. Regularly monitor plants for early symptoms and remove infected leaves, fruits, stems, or plant debris immediately to reduce disease spread. Maintain proper field sanitation, avoid overcrowding, and ensure good air circulation around plants. Use disease-free seeds or resistant crop varieties whenever possible and follow proper crop rotation practices to reduce pathogen buildup in the soil. Apply recommended fungicides, bactericides, bio-control agents, or organic treatments according to agricultural guidelines and repeat applications during severe infection periods if required. Avoid excessive irrigation and maintain balanced fertilizer application to support healthy plant growth and improve disease resistance.",
+        "translations": {
+            "hi": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो पौधा कोई दृश्य लक्षण नहीं दिखाता है। यह रोग अनुकूल मौसम, अधिक नमी, खराब वायु संचार, संक्रमित अवशेष या दूषित मिट्टी के कारण तेजी से फैल सकता है। रोग हवा, बारिश के छींटों, सिंचाई के पानी, कीटों, संक्रमित बीजों और खेती के उपकरणों के माध्यम से फैलता है। शुरुआती अवस्था में पत्तियों, तनों या फलों पर धब्बे, पीलापन, सूखापन या विकृति दिखाई दे सकती है। यदि समय पर नियंत्रण नहीं किया गया तो यह रोग फसल की वृद्धि, गुणवत्ता और उत्पादन को गंभीर रूप से प्रभावित कर सकता है।",
+                "cure": "संतुलित उर्वरक, सिंचाई और नियमित निरीक्षण का पालन करें। संक्रमित पत्तियों, फलों और पौधों के अवशेषों को हटाकर नष्ट करें ताकि रोग का फैलाव कम हो सके। खेत या बगीचे में उचित दूरी बनाए रखें ताकि हवा का संचार बना रहे और नमी कम हो। रोग प्रतिरोधक बीजों और स्वस्थ पौध सामग्री का उपयोग करें तथा फसल चक्र अपनाएं। आवश्यकतानुसार अनुशंसित फफूंदनाशक, बैक्टीरिसाइड या जैविक उपचार का उपयोग करें। संतुलित खाद और उचित सिंचाई बनाए रखें ताकि पौधे स्वस्थ रहें और रोग प्रतिरोधक क्षमता बढ़े।"
+            },
+            "mr": {
+                "disease": "निरोगी टॉमेटो",
+                "cause": "टॉमेटो पौधा कोणताही दृश्य लक्षण दर्शवत नाही. हा रोग जास्त आर्द्रता, खराब हवा खेळती राहणे, संक्रमित अवशेष किंवा दूषित मातीमुळे वेगाने पसरू शकतो. रोग वारा, पावसाचे थेंब, सिंचनाचे पाणी, कीड, संक्रमित बियाणे आणि शेतीतील साधनांद्वारे पसरतो. सुरुवातीला पानांवर, खोडांवर किंवा फळांवर डाग, पिवळेपणा, वाळणे किंवा विकृती दिसू शकते. वेळेवर नियंत्रण न घेतल्यास हा रोग पिकाची वाढ, गुणवत्ता आणि उत्पादन मोठ्या प्रमाणात कमी करू शकतो.",
+                "cure": "संतुलित उर्वरक, सिंचाई आणि नियमित प्रतिक्रिया पाळा. संक्रमित पाने, फळे आणि झाडांचे अवशेष काढून नष्ट करा जेणेकरून रोगाचा प्रसार कमी होईल. शेतात योग्य अंतर ठेवा जेणेकरून हवा खेळती राहील आणि आर्द्रता कमी राहील. रोगप्रतिकारक बियाणे आणि निरोगी रोपांचा वापर करा तसेच पीक फेरपालट पद्धत अवलंबा. आवश्यकतेनुसार शिफारस केलेली बुरशीनाशके, बॅक्टेरिसाइड किंवा जैविक उपचार वापरा. संतुलित खत व योग्य सिंचन ठेवा जेणेकरून झाडांची रोगप्रतिकारक क्षमता वाढेल."
+            }
+        },
+        "fertilizer": "NPK 20-20-20 + Organic Compost",
+        "products": {
+            "amazon": "https://www.amazon.in/s?k=npk+20-20-20",
+            "flipkart": "https://www.flipkart.com/search?q=npk+20-20-20"
+        }
+    }
+]

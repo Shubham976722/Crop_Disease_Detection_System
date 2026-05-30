@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="about-page">
+
+    <!-- HERO -->
+    <section class="about-hero">
+        <div class="overlay"></div>
+        <div class="hero-content text-center">
+            <h1>AI-Powered Smart Farming 🌿</h1>
+            <p>Transforming agriculture with intelligent crop disease detection</p>
+            <a href="{{ url_for('predict_page') }}" class="hero-btn">Start Diagnosis →</a>
+        </div>
+    </section>
+
+    <!-- PROBLEM & SOLUTION -->
+    <div class="container mt-5">
+
+        <div class="row g-4">
+
+            <!-- PROBLEM -->
+            <div class="col-md-6">
+                <div class="glass-card pro-card">
+
+                    <h3>🚨 Problem Statement</h3>
+
+                    <p>
+                        Agriculture remains the backbone of many economies, yet farmers continue to face
+                        significant challenges in identifying plant diseases at early stages. Traditional
+                        methods rely heavily on manual inspection, which is time-consuming, requires expert
+                        knowledge, and is often inaccurate.
+                    </p>
+
+                    <p>
+                        Due to delayed diagnosis, farmers suffer from reduced crop yield, increased pesticide
+                        usage, and financial losses. In rural areas, access to agricultural experts is limited,
+                        making the problem even more critical.
+                    </p>
+
+                    <ul class="problem-points">
+                        <li>❌ Lack of early disease detection</li>
+                        <li>❌ Dependence on agricultural experts</li>
+                        <li>❌ Increased crop damage and loss</li>
+                        <li>❌ Limited access to proper guidance</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- SOLUTION -->
+            <div class="col-md-6">
+                <div class="glass-card pro-card">
+
+                    <h3>💡 Proposed Solution</h3>
+
+                    <p>
+                        Krushi Mitra is an AI-powered crop health diagnostic system designed to provide
+                        instant, accurate, and accessible plant disease detection using deep learning.
+                    </p>
+
+                    <p>
+                        By simply uploading an image of a plant leaf, farmers can receive real-time
+                        analysis, disease identification, causes, and treatment recommendations without
+                        requiring expert intervention.
+                    </p>
+
+                    <ul class="solution-points">
+                        <li>✅ AI-based disease prediction using CNN models</li>
+                        <li>✅ Instant diagnosis with high accuracy</li>
+                        <li>✅ Smart fertilizer & treatment recommendations</li>
+                        <li>✅ Multi-language support for better accessibility</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FEATURES -->
+    <div class="container mt-5">
+        <h2 class="section-title text-center">Core Features</h2>
+
+        <div class="feature-grid mt-4">
+
+            <div class="feature-card">
+                🌿 <h5>AI Detection</h5>
+                <p>Accurate disease prediction using deep learning.</p>
+            </div>
+
+            <div class="feature-card">
+                📷 <h5>Image Upload</h5>
+                <p>Upload or capture leaf images instantly.</p>
+            </div>
+
+            <div class="feature-card">
+                💊 <h5>Treatment</h5>
+                <p>Get fertilizer & treatment suggestions.</p>
+            </div>
+
+            <div class="feature-card">
+                🌐 <h5>Multi Language</h5>
+                <p>Supports Hindi, Marathi, English.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="container mt-5 text-center">
+        <h2 class="section-title">How It Works</h2>
+
+        <div class="steps mt-4">
+
+            <div class="step">
+                <span>1</span>
+                <p>Upload Image</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <p>AI Analysis</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <p>Get Results</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats mt-5">
+        <div>
+            <h2>95%+</h2>
+            <p>Accuracy</p>
+        </div>
+
+        <div>
+            <h2>10+</h2>
+            <p>Crop Types</p>
+        </div>
+
+        <div>
+            <h2>Instant</h2>
+            <p>Diagnosis</p>
+        </div>
+    </div>
+
+    <!-- TECHNOLOGY -->
+    <div class="container mt-5 text-center">
+
+        <h2 class="section-title">⚙️ Technology Stack</h2>
+        <p class="tech-desc">
+            Our system is built using modern technologies and frameworks to ensure accuracy,
+            scalability, and performance in real-time crop disease detection.
+        </p>
+
+        <div class="row mt-4 g-4">
+
+            <!-- FRONTEND -->
+            <div class="col-md-3">
+                <div class="glass-card tech-card">
+                    <h5>🎨 Frontend</h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="col-md-3">
+                <div class="glass-card tech-card">
+                    <h5>⚙️ Backend</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>Flask Framework</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- AI / ML -->
+            <div class="col-md-3">
+                <div class="glass-card tech-card">
+                    <h5>🤖 AI / ML</h5>
+                    <ul>
+                        <li>TensorFlow / Keras</li>
+                        <li>CNN Model</li>
+                        <li>Image Classification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DATABASE -->
+            <div class="col-md-3">
+                <div class="glass-card tech-card">
+                    <h5>🗄️ Database</h5>
+                    <ul>
+                        <li>SQLite</li>
+                        <li>User Authentication</li>
+                        <li>Session Management</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- EXTRA TECH -->
+        <div class="row mt-4 g-4">
+
+            <div class="col-md-4">
+                <div class="glass-card tech-card">
+                    <h5>📦 Tools & Libraries</h5>
+                    <ul>
+                        <li>OpenCV (Image Processing)</li>
+                        <li>NumPy</li>
+                        <li>UUID</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass-card tech-card">
+                    <h5>📧 Services</h5>
+                    <ul>
+                        <li>Flask-Mail</li>
+                        <li>Email Verification System</li>
+                        <li>Password Reset System</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass-card tech-card">
+                    <h5>🔐 Security</h5>
+                    <ul>
+                        <li>Password Hashing</li>
+                        <li>Session Management</li>
+                        <li>Token-based Verification</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- MISSION -->
+    <div class="container mt-5 text-center">
+
+        <h2 class="section-title">🌍 Our Mission & Vision</h2>
+
+        <div class="row mt-4 g-4">
+
+            <!-- MISSION -->
+            <div class="col-md-4">
+                <div class="glass-card mission-card">
+
+                    <h4>🎯 Mission</h4>
+
+                    <p>
+                        To empower farmers with AI-driven tools that enable early disease detection,
+                        reduce crop loss, and improve agricultural productivity through smart decision-making.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- VISION -->
+            <div class="col-md-4">
+                <div class="glass-card mission-card">
+
+                    <h4>🚀 Vision</h4>
+
+                    <p>
+                        To build a technology-driven agricultural ecosystem where farmers can access
+                        intelligent solutions anytime, anywhere, ensuring sustainable and profitable farming.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- GOAL -->
+            <div class="col-md-4">
+                <div class="glass-card mission-card">
+
+                    <h4>🌱 Our Goal</h4>
+
+                    <p>
+                        To bridge the gap between modern AI technology and traditional farming practices,
+                        making advanced crop diagnostics accessible to every farmer.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
