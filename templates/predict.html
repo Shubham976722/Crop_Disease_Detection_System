@@ -1,107 +1,283 @@
 {% extends "base.html" %}
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+<style>
+    .predict-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 100px;
+    }
 
-</html>
-<div class="dashboard-wrapper">
+    /* Upload Card */
+    .upload-card {
+        background: rgba(255,255,255,0.10);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255,255,255,0.20);
+        border-radius: 20px;
+        padding: 32px 28px;
+        width: 100%;
+        max-width: 580px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.30);
+        color: white;
+    }
 
-    <!-- LEFT SIDE -->
-    <div class="dashboard-left">
+    .upload-card h4 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
 
-        <h4 class="mb-3">Upload Leaf Image</h4>
-        <p class="text-muted">Upload an image of your plant leaf for AI analysis</p>
+    .upload-card .subtitle {
+        color: rgba(255,255,255,0.60);
+        font-size: 0.88rem;
+        margin-bottom: 20px;
+    }
 
-        <form action="{{ url_for('upload', lang=lang) }}" method="POST" enctype="multipart/form-data"
-            onsubmit="showLeafLoader()">
+    /* Upload & Camera boxes */
+    .upload-box {
+        border: 2px dashed rgba(72,255,130,0.65);
+        border-radius: 14px;
+        padding: 20px 16px;
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.2s, border-color 0.2s;
+        margin-bottom: 12px;
+        display: block;
+        user-select: none;
+    }
 
-            <!-- Hidden Upload Input -->
-            <input type="file" id="uploadInput" name="img" accept="image/*" hidden onchange="previewImage(this)">
+    .upload-box:hover {
+        background: rgba(72,255,130,0.09);
+        border-color: #48ff82;
+    }
 
-            <!-- Hidden Inputs -->
-            <input type="file" id="uploadInput" name="img" accept="image/*" hidden onchange="previewImage(this)">
+    .upload-box p {
+        margin: 0 0 3px;
+        font-size: 0.97rem;
+        font-weight: 600;
+        color: #fff;
+    }
 
-            <!-- ===== UPLOAD BOX ===== -->
-            <label class="upload-box mb-3" onclick="document.getElementById('uploadInput').click()">
+    .upload-box small {
+        color: rgba(255,255,255,0.50);
+        font-size: 0.78rem;
+    }
 
-                <div class="upload-content text-center">
-                    <p>📂 Click to Upload Image</p>
-                    <small>JPG, PNG (MAX 5MB)</small>
-                </div>
+    /* Image preview box */
+    #previewBox {
+        width: 100%;
+        border-radius: 14px;
+        border: 2px solid rgba(72,255,130,0.55);
+        background: rgba(0,0,0,0.30);
+        overflow: hidden;
+        margin: 16px 0 4px;
+        text-align: center;
+    }
 
-            </label>
+    #previewImg {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        display: block;
+    }
 
+    #previewLabel {
+        display: block;
+        padding: 6px 0 10px;
+        font-size: 0.80rem;
+        color: rgba(255,255,255,0.55);
+    }
 
-            <!-- ===== CAMERA BOX ===== -->
-            <div class="upload-box mb-3 text-center" onclick="startCamera()">
+    /* Analyze button */
+    .analyze-btn {
+        width: 100%;
+        padding: 13px;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #00c853, #1de9b6);
+        color: white;
+        cursor: pointer;
+        margin-top: 16px;
+        letter-spacing: 0.4px;
+        transition: opacity 0.2s, transform 0.15s;
+    }
 
-                <div class="upload-content">
-                    <p>📷 Click to Open Camera</p>
-                    <small>Use Laptop / Mobile Camera</small>
-                </div>
+    .analyze-btn:hover {
+        opacity: 0.90;
+        transform: translateY(-1px);
+    }
 
+    /* Result section */
+    .result-section {
+        width: 100%;
+        max-width: 580px;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .result-img-wrap {
+        width: 100%;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 2px solid rgba(72,255,130,0.55);
+        background: rgba(0,0,0,0.30);
+        box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    .result-img-wrap img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .result-card {
+        border-radius: 18px;
+        padding: 26px 24px 20px;
+        box-shadow: 0 6px 28px rgba(0,0,0,0.18);
+        animation: slideUp 0.4s ease;
+    }
+
+    @keyframes slideUp {
+        from { opacity:0; transform:translateY(20px); }
+        to   { opacity:1; transform:translateY(0); }
+    }
+
+    .result-disease {
+        background: linear-gradient(135deg, #fff5f5, #fff);
+        border-left: 5px solid #e53935;
+        color: #1a1a1a;
+    }
+
+    .result-healthy {
+        background: linear-gradient(135deg, #f1fff5, #fff);
+        border-left: 5px solid #2e7d32;
+        color: #1a1a1a;
+    }
+
+    .result-card h3 { font-size:1.25rem; font-weight:800; margin-bottom:10px; }
+    .result-card h4 { font-size:1.05rem; font-weight:700; margin-bottom:8px; color:#1b5e20; }
+    .result-card p  { margin-bottom:6px; font-size:0.93rem; color:#333; line-height:1.55; }
+
+    .confidence-badge {
+        display: inline-block;
+        margin-top: 10px;
+        background: #e8f5e9;
+        color: #2e7d32;
+        border-radius: 30px;
+        padding: 5px 16px;
+        font-size: 0.83rem;
+        font-weight: 700;
+    }
+
+    .fertilizer-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px 22px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+        animation: slideUp 0.45s ease;
+    }
+
+    .fertilizer-card h5 { font-weight:700; color:#2e7d32; margin-bottom:6px; }
+    .fertilizer-card p  { color:#444; font-size:0.93rem; margin-bottom:10px; }
+
+    .product-links { display:flex; gap:10px; flex-wrap:wrap; }
+
+    /* Camera section */
+    #cameraSection video {
+        width: 100%;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+</style>
+
+<div class="predict-page">
+
+    <!-- UPLOAD CARD -->
+    <div class="upload-card">
+        <h4>🌿 Upload Leaf Image</h4>
+        <p class="subtitle">Upload an image of your plant leaf for AI analysis</p>
+
+        <form id="uploadForm"
+              action="{{ url_for('upload', lang=lang) }}"
+              method="POST"
+              enctype="multipart/form-data"
+              onsubmit="return handleSubmit()">
+
+            <!-- Real file input (hidden, triggered by JS) -->
+            <input type="file"
+                   id="uploadInput"
+                   name="img"
+                   accept="image/*"
+                   style="position:absolute; opacity:0; width:0; height:0; pointer-events:none;"
+                   onchange="onFileChosen(this)">
+
+            <!-- Upload click box -->
+            <div class="upload-box" id="uploadClickBox">
+                <p>📂 Click to Upload Image</p>
+                <small>JPG, PNG (MAX 5MB)</small>
             </div>
 
+            <!-- Camera click box -->
+            <div class="upload-box" onclick="startCamera()">
+                <p>📷 Click to Open Camera</p>
+                <small>Use Laptop / Mobile Camera</small>
+            </div>
 
-            <!-- ===== CAMERA CONTROLS (OUTSIDE BOX) ===== -->
-            <div id="cameraSection" class="text-center mt-3">
-
-                <video id="video" width="100%" autoplay style="display:none;"></video>
-
-                <button type="button" class="btn btn-success w-100 mb-2" onclick="captureImage()" style="display:none;"
-                    id="captureBtn">
-                    Capture
+            <!-- Camera controls -->
+            <div id="cameraSection">
+                <video id="video" autoplay style="display:none;"></video>
+                <button type="button" class="btn btn-success w-100 mb-2 mt-2"
+                        onclick="captureImage()" style="display:none;" id="captureBtn">
+                    📸 Capture
                 </button>
-
-                <button type="button" class="btn btn-danger w-100 mb-2" onclick="stopCamera()" style="display:none;"
-                    id="stopBtn">
-                    Stop Camera
+                <button type="button" class="btn btn-danger w-100 mb-2"
+                        onclick="stopCamera()" style="display:none;" id="stopBtn">
+                    ⏹ Stop Camera
                 </button>
-
                 <canvas id="canvas" style="display:none;"></canvas>
-
             </div>
-            </label>
 
-            <!-- Preview -->
-            <img id="previewImg" class="img-fluid rounded mb-3">
+            <!-- Preview box — hidden until image chosen -->
+            <div id="previewBox" style="display:none;">
+                <img id="previewImg" src="" alt="Leaf Preview">
+                <span id="previewLabel">✅ Image selected — click Analyze to scan</span>
+            </div>
 
-            <!-- Analyze -->
-            <button class="btn gradient-btn w-100 py-2">
-                Analyze Image
-            </button>
+            <!-- Analyze button -->
+            <button type="submit" class="analyze-btn">🔍 Analyze Image</button>
 
         </form>
-
     </div>
 
-    <!-- RIGHT SIDE -->
-
-    <div class="dashboard-right">
-
-        {% if result %}
+    <!-- RESULT SECTION (only after analysis) -->
+    {% if result %}
+    <div class="result-section" id="resultSection">
 
         {% set is_healthy = "healthy" in prediction.name.lower() %}
 
-        <div class="farmer-card {% if is_healthy %}result-healthy{% else %}result-disease{% endif %}">
+        <!-- Analyzed image -->
+        <div class="result-img-wrap">
+            <img src="{{ imagepath }}" alt="Analyzed Leaf">
+        </div>
 
-            <!-- RESULT TITLE -->
-            <div class="mb-3">
-                {% if is_healthy %}
-                <h3>🌿 Healthy Plant</h3>
-                {% else %}
-                <h3>⚠ Crop Issue Detected</h3>
-                {% endif %}
-            </div>
+        <!-- Disease / Healthy card -->
+        <div class="result-card {% if is_healthy %}result-healthy{% else %}result-disease{% endif %}">
 
-            <!-- LANGUAGE SECTION -->
+            {% if is_healthy %}
+            <h3>🌿 Healthy Plant</h3>
+            {% else %}
+            <h3>⚠ Crop Issue Detected</h3>
+            {% endif %}
+
             {% if lang == "hi" and prediction.translations %}
             <h4>🌱 {{ prediction.translations.hi.disease }}</h4>
             <p>📌 कारण: {{ prediction.translations.hi.cause }}</p>
@@ -114,231 +290,221 @@
 
             {% else %}
             <h4>🌱 {{ prediction.name.replace("___"," - ").replace("_"," ") }}</h4>
-            <p>📌 Reason: {{ prediction.cause }}</p>
-            <p>🩺 Solution: {{ prediction.cure }}</p>
-            <!-- <div class="info-card success">
-                <h6>Disease Identified</h6>
-                <h5>{{ prediction.name.replace("___"," - ").replace("_"," ") }}</h5>
-            </div>
-            <div class="info-card confidence">
-                <h6>Confidence Level</h6>
-                <h5>{{ prediction.confidence }}%</h5>
-            </div>
-            <div class="info-card advice">
-                <h6>Expert Advice</h6>
-                <p><strong>Cause:</strong> {{ prediction.cause }}</p>
-                <p><strong>Treatment:</strong> {{ prediction.cure }}</p>
-            </div> -->
+            <p>📌 <strong>Reason:</strong> {{ prediction.cause }}</p>
+            <p>🩺 <strong>Solution:</strong> {{ prediction.cure }}</p>
             {% endif %}
 
-            <!-- CONFIDENCE -->
-            <div class="mt-3">
-                <strong>🔍 Model Confidence:</strong> {{ prediction.confidence }}%
-            </div>
-
+            <span class="confidence-badge">🔍 Model Confidence: {{ prediction.confidence }}%</span>
         </div>
 
-        <!-- FERTILIZER SECTION (UNCHANGED FUNCTIONALITY) -->
+        <!-- Fertilizer card -->
         {% if prediction.fertilizer %}
-        <div class="farmer-card mt-3">
+        <div class="fertilizer-card">
             <h5>🌾 Recommended Fertilizer</h5>
             <p><strong>{{ prediction.fertilizer }}</strong></p>
-
             {% if prediction.products %}
-            <div class="product-links mt-2">
-
+            <div class="product-links">
                 {% if prediction.products.amazon %}
-                <a href="{{ prediction.products.amazon }}" target="_blank" class="btn btn-warning btn-sm me-2">
-                    🛒 Buy on Amazon
-                </a>
+                <a href="{{ prediction.products.amazon }}" target="_blank"
+                   class="btn btn-warning btn-sm">🛒 Buy on Amazon</a>
                 {% endif %}
-
                 {% if prediction.products.flipkart %}
-                <a href="{{ prediction.products.flipkart }}" target="_blank" class="btn btn-primary btn-sm">
-                    🛍 Buy on Flipkart
-                </a>
+                <a href="{{ prediction.products.flipkart }}" target="_blank"
+                   class="btn btn-primary btn-sm">🛍 Buy on Flipkart</a>
                 {% endif %}
-
             </div>
             {% endif %}
         </div>
         {% endif %}
-        <!-- 🌿 SMART FARMER ASSISTANT -->
-        <!-- <div class="farmer-card mt-3">
 
-            <div class="chat-header">
-                <div class="chat-avatar">🤖</div>
-                <div class="chat-title">
-                    <h5>कृषि मित्र</h5>
-                    <small>Smart Crop Guidance</small>
-                </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<!-- Leaf Loader Overlay -->
+<div id="leafLoaderOverlay" class="leaf-loader-overlay">
+    <div class="leaf-loader-container">
+        <div class="leaf-wrapper">
+            <div id="leafFill" class="leaf-fill"></div>
+            <img src="{{ url_for('static', filename='images/leaf.png') }}" class="leaf-img">
+            <div class="leaf-percent">
+                <span id="percentText">0%</span>
             </div>
-
-            <div id="chatBox" class="chat-box mb-2"></div>
-
-            <div class="chat-input-wrapper">
-                <input type="text" id="chatInput" placeholder="Ask about treatment, fertilizer dose, prevention...">
-                <button onclick="sendMessage()">Send</button>
-            </div>
-
-        </div> -->
-        {% else %}
-
-        <div class="analysis-placeholder text-center">
-            <h4>📷 Upload a leaf image</h4>
-            <p>Result will appear here.</p>
         </div>
-
-        {% endif %}
-
+        <p class="leaf-text">Analyzing Crop...</p>
     </div>
 </div>
-<!-- CROP LOADING OVERLAY -->
-<!-- <div id="loadingOverlay" class="loading-overlay">
-    <div class="loader-container">
-        <svg class="progress-ring" width="150" height="150">
-            <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#00c853" />
-                    <stop offset="100%" stop-color="#1de9b6" />
-                </linearGradient>
-            </defs>
-            <circle class="progress-ring-bg" cx="75" cy="75" r="65" />
-            <circle class="progress-ring-fill" cx="75" cy="75" r="65" />
-        </svg>
-        <div class="progress-text">
-            <span id="progressPercent">0%</span>
-        </div>
-        <p class="loading-text">Analyzing Crop...</p>
-    </div>
-</div> -->
-<!-- 🔥 FLOATING CHATBOT -->
 
-<!-- 🔥 CHATBOT -->
-
+<!-- Floating Chatbot -->
 <div id="chatbot-box">
-
     <div class="chat-header">
         <span>🤖 कृषि मित्र</span>
         <span onclick="toggleChatbot()" style="cursor:pointer;">✖</span>
     </div>
-
     <div id="chatBox" class="chat-body"></div>
-
     <div class="chat-input">
         <input type="text" id="chatInput" placeholder="Ask about crops...">
         <button onclick="sendMessage()">Send</button>
     </div>
-
 </div>
 
 <div id="chatbot-toggle" onclick="toggleChatbot()">
     <img src="{{ url_for('static', filename='images/farmer-bot.png') }}" alt="chatbot">
 </div>
-<!-- 🌿 LEAF LOADER -->
-<div id="leafLoaderOverlay" class="leaf-loader-overlay">
 
-    <div class="leaf-loader-container">
-
-        <div class="leaf-wrapper">
-
-            <!-- Fill Layer -->
-            <div id="leafFill" class="leaf-fill"></div>
-
-            <!-- Leaf Image -->
-            <img src="{{ url_for('static', filename='images/leaf.png') }}" class="leaf-img">
-
-            <!-- Percentage -->
-            <div class="leaf-percent">
-                <span id="percentText">0%</span>
-            </div>
-
-        </div>
-
-        <p class="leaf-text">Analyzing Crop...</p>
-
-    </div>
-</div>
 <script>
-    function toggleChatbot() {
-        let box = document.getElementById("chatbot-box");
+// ── Attach click on the upload box to trigger the hidden input ──
+document.getElementById('uploadClickBox').addEventListener('click', function () {
+    document.getElementById('uploadInput').click();
+});
 
-        if (box.style.display === "flex") {
-            box.style.display = "none";
-        } else {
-            box.style.display = "flex";
-        }
+// ── Called when user picks a file ──
+function onFileChosen(input) {
+    if (!input.files || input.files.length === 0) return;
+
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+        const previewBox = document.getElementById('previewBox');
+        const previewImg = document.getElementById('previewImg');
+
+        previewImg.src = e.target.result;
+        previewBox.style.display = 'block';   // make it visible
+
+        // Smooth scroll so user sees the preview
+        previewBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+
+    reader.readAsDataURL(file);
+}
+
+// ── Form submit — validate then show loader ──
+function handleSubmit() {
+    const input = document.getElementById('uploadInput');
+    if (!input.files || input.files.length === 0) {
+        alert('⚠ Please select or capture an image first.');
+        return false;
     }
-    function sendMessage() {
+    startLeafLoader();
+    return true;   // allow form to submit
+}
 
-        const input = document.getElementById("chatInput");
-        const chatBox = document.getElementById("chatBox");
-        const message = input.value.trim();
+// ── Leaf loader animation ──
+function startLeafLoader() {
+    const overlay = document.getElementById('leafLoaderOverlay');
+    const fill    = document.getElementById('leafFill');
+    const text    = document.getElementById('percentText');
 
-        if (!message) return;
+    overlay.style.display = 'flex';
+    let pct = 0;
 
-        // Show user message
-        const userDiv = document.createElement("div");
-        userDiv.className = "user-msg";
-        userDiv.textContent = message;
-        chatBox.appendChild(userDiv);
+    const iv = setInterval(function () {
+        pct += Math.random() * 7 + 1;
+        if (pct >= 99) { pct = 99; clearInterval(iv); }
+        fill.style.height   = pct + '%';
+        text.textContent    = Math.round(pct) + '%';
+    }, 200);
+}
 
-        // Create typing indicator
-        const typingDiv = document.createElement("div");
-        typingDiv.className = "bot-msg typing";
+// ── Camera ──
+let stream = null;
 
-        typingDiv.innerHTML = `
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    `;
-
-        chatBox.appendChild(typingDiv);
-        chatBox.scrollTop = chatBox.scrollHeight;
-
-        input.value = "";
-
-        fetch("/chatbot", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ message: message })
+function startCamera() {
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (s) {
+            stream = s;
+            const video = document.getElementById('video');
+            video.srcObject = s;
+            video.style.display      = 'block';
+            document.getElementById('captureBtn').style.display = 'block';
+            document.getElementById('stopBtn').style.display    = 'block';
         })
-            .then(response => response.json())
-            .then(data => {
-                setTimeout(() => {
-                    typingDiv.remove();
+        .catch(function () {
+            alert('Camera access denied or unavailable.');
+        });
+}
 
-                    const botDiv = document.createElement("div");
-                    botDiv.className = "bot-msg";
-                    botDiv.textContent = data.reply;
+function captureImage() {
+    const video  = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    canvas.width  = video.videoWidth;
+    canvas.height = video.videoHeight;
+    canvas.getContext('2d').drawImage(video, 0, 0);
 
-                    chatBox.appendChild(botDiv);
-                    chatBox.scrollTop = chatBox.scrollHeight;
+    canvas.toBlob(function (blob) {
+        const file = new File([blob], 'camera_capture.jpg', { type: 'image/jpeg' });
+        const dt   = new DataTransfer();
+        dt.items.add(file);
+        document.getElementById('uploadInput').files = dt.files;
 
-                }, 800);   // 800ms delay
-            });
-    }
+        // Show preview
+        const previewBox = document.getElementById('previewBox');
+        const previewImg = document.getElementById('previewImg');
+        previewImg.src           = canvas.toDataURL('image/jpeg');
+        previewBox.style.display = 'block';
+    }, 'image/jpeg');
+
+    stopCamera();
+}
+
+function stopCamera() {
+    if (stream) { stream.getTracks().forEach(t => t.stop()); stream = null; }
+    document.getElementById('video').style.display      = 'none';
+    document.getElementById('captureBtn').style.display = 'none';
+    document.getElementById('stopBtn').style.display    = 'none';
+}
+
+// ── Chatbot ──
+function toggleChatbot() {
+    const box = document.getElementById('chatbot-box');
+    box.style.display = (box.style.display === 'flex') ? 'none' : 'flex';
+}
+
+function sendMessage() {
+    const input   = document.getElementById('chatInput');
+    const chatBox = document.getElementById('chatBox');
+    const msg     = input.value.trim();
+    if (!msg) return;
+
+    const uDiv = document.createElement('div');
+    uDiv.className   = 'user-msg';
+    uDiv.textContent = msg;
+    chatBox.appendChild(uDiv);
+
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'bot-msg typing';
+    typingDiv.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+    chatBox.appendChild(typingDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+    input.value = '';
+
+    fetch('/chatbot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: msg })
+    })
+    .then(r => r.json())
+    .then(data => {
+        setTimeout(function () {
+            typingDiv.remove();
+            const bDiv = document.createElement('div');
+            bDiv.className   = 'bot-msg';
+            bDiv.textContent = data.reply;
+            chatBox.appendChild(bDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }, 800);
+    });
+}
+
+// ── Auto-scroll to result after analysis ──
+{% if result %}
+window.addEventListener('load', function () {
+    var rs = document.getElementById('resultSection');
+    if (rs) setTimeout(function () { rs.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 300);
+});
+{% endif %}
 </script>
-{% endblock %}
 
-<!-- CROP LOADING OVERLAY -->
-<!-- <div id="loadingOverlay" class="loading-overlay">
-    <div class="loader-container">
-        <svg class="progress-ring" width="150" height="150">
-            <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#00c853" />
-                    <stop offset="100%" stop-color="#1de9b6" />
-                </linearGradient>
-            </defs>
-            <circle class="progress-ring-bg" cx="75" cy="75" r="65" />
-            <circle class="progress-ring-fill" cx="75" cy="75" r="65" />
-        </svg>
-        <div class="progress-text">
-            <span id="progressPercent">0%</span>
-        </div>
-        <p class="loading-text">Analyzing Crop...</p>
-    </div>
-</div> -->
+{% endblock %}

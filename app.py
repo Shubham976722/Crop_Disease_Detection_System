@@ -116,9 +116,6 @@ disease_knowledge = {
     },
 }
 
-print("JSON Loaded Successfully ✅")
-print("JSON Loaded Successfully ✅")
-
 
 # ================================
 # LEAF VALIDATION USING OPENCV
@@ -255,9 +252,37 @@ CREATE TABLE IF NOT EXISTS users (
     """
     )
 
+    # Seed default fixed admin account if it does not exist
+    cursor.execute("SELECT id FROM users WHERE username = 'admin'")
+    admin_exists = cursor.fetchone()
+    if not admin_exists:
+        admin_password_hash = generate_password_hash("admin123")
+        cursor.execute(
+            """
+            INSERT INTO users (username, email, password, role, is_verified)
+            VALUES (?, ?, ?, ?, 1)
+            """,
+            ("admin", "admin@krushimitra.com", admin_password_hash, "admin"),
+        )
+
+    # Seed default fixed user (farmer) account if it does not exist
+    cursor.execute("SELECT id FROM users WHERE username = 'user'")
+    user_exists = cursor.fetchone()
+    if not user_exists:
+        user_password_hash = generate_password_hash("user123")
+        cursor.execute(
+            """
+            INSERT INTO users (username, email, password, role, is_verified)
+            VALUES (?, ?, ?, ?, 1)
+            """,
+            ("user", "user@krushimitra.com", user_password_hash, "farmer"),
+        )
+
     conn.commit()
     conn.close()
 
+
+init_db()
 
 
 @app.route("/")
@@ -322,12 +347,15 @@ def uploaded_file(filename):
 def login():
 
     if request.method == "POST":
-        username = request.form["username"]
+        login_input = request.form["username"].strip()
         password = request.form["password"]
 
         conn = sqlite3.connect("users.db", timeout=10, check_same_thread=False)
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM users WHERE username=?", (username,))
+        cursor.execute(
+            "SELECT * FROM users WHERE LOWER(username)=LOWER(?) OR LOWER(email)=LOWER(?)",
+            (login_input, login_input),
+        )
         user = cursor.fetchone()
         conn.close()
 
@@ -486,7 +514,7 @@ def verify_otp():
 
         user_otp = request.form["otp"].strip()
 
-        with sqlite3.connect("users.db", timeout=10) as conn:
+        with sqlite3.connect("users.db", timeout=30) as conn:
             cursor = conn.cursor()
 
             cursor.execute(
@@ -555,7 +583,7 @@ def resend_otp():
     expiry = datetime.now() + timedelta(minutes=5)
 
     # 🔐 Step 3: Update OTP in DB
-    with sqlite3.connect("users.db", timeout=10) as conn:
+    with sqlite3.connect("users.db", timeout=30) as conn:
         cursor = conn.cursor()
 
         cursor.execute(
@@ -918,7 +946,7 @@ def admin_dashboard():
     if session.get("role") != "admin":
         return "Access Denied. Admins only."
 
-    conn = sqlite3.connect("users.db", timeout=10)
+    conn = sqlite3.connect("users.db", timeout=30)
     # conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
@@ -1069,6 +1097,13 @@ def delete_user(user_id):
     conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
 
+    cursor.execute("SELECT username FROM users WHERE id=?", (user_id,))
+    target_user = cursor.fetchone()
+    if target_user and target_user[0] == "admin":
+        conn.close()
+        flash("Fixed admin account cannot be deleted.", "warning")
+        return redirect(url_for("admin_dashboard"))
+
     cursor.execute("DELETE FROM users WHERE id=?", (user_id,))
     conn.commit()
     conn.close()
@@ -1085,9 +1120,14 @@ def toggle_role(user_id):
     conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
 
-    cursor.execute("SELECT role FROM users WHERE id=?", (user_id,))
-    current_role = cursor.fetchone()[0]
+    cursor.execute("SELECT username, role FROM users WHERE id=?", (user_id,))
+    target_user = cursor.fetchone()
+    if target_user and target_user[0] == "admin":
+        conn.close()
+        flash("Fixed admin role cannot be changed.", "warning")
+        return redirect(url_for("admin_dashboard"))
 
+    current_role = target_user[1] if target_user else "farmer"
     new_role = "admin" if current_role == "farmer" else "farmer"
 
     cursor.execute("UPDATE users SET role=? WHERE id=?", (new_role, user_id))
