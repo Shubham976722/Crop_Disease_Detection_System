@@ -417,7 +417,7 @@ h5 {
 
 .pro-footer {
     position: relative;
-    background: url('/static/images/footer-bg.jpg') center/cover no-repeat;
+    background: #111a14;
     padding: 90px 40px 25px;
     color: #fff;
     margin-top: 80px;

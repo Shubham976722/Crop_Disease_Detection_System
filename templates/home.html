@@ -1,58 +1,1207 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* ===================================================
+       GLOBAL TRANSPARENT THEME (BACKGROUND IMAGE VISIBLE)
+       =================================================== */
+    .home-wrapper {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.40) 25%,
+            rgba(0, 0, 0, 0.45) 50%,
+            rgba(0, 0, 0, 0.40) 75%,
+            rgba(0, 0, 0, 0.70) 100%
+        );
+        min-height: 100vh;
+        width: 100%;
+        color: #ffffff;
+    }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    /* ===================================================
+       SHARED SECTION HEADINGS (GLASS THEME)
+       =================================================== */
+    .glass-section {
+        padding: 90px 0;
+        position: relative;
+    }
 
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-</head>
-<body>
-    
-</body>
+    .glass-tag {
+        display: inline-block;
+        padding: 8px 24px;
+        background: rgba(72, 255, 130, 0.15);
+        color: #48ff82;
+        border: 1px solid rgba(72, 255, 130, 0.4);
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        margin-bottom: 18px;
+    }
 
-<section class="landing-hero">
-    <div class="hero-overlay">
-        <div class="container text-center text-white">
-            <h1 class="display-3 fw-bold">Crop Health Diagnostic System</h1>
-            <p class="lead mt-3">
-                Detect plant leaf diseases using Deep Learning and image analysis.
-            </p>
-            <a href="/predict" class="btn btn-success btn-lg mt-4 px-5">
-                Proceed to Detection
-            </a>
+    .glass-title {
+        max-width: 760px;
+        margin: 0 auto 55px;
+    }
+
+    .glass-title h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: #ffffff;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+        line-height: 1.25;
+    }
+
+    .glass-title h2 span {
+        color: #48ff82;
+        text-shadow: 0 0 20px rgba(72, 255, 130, 0.4);
+    }
+
+    .glass-title p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.08rem;
+        line-height: 1.75;
+        margin-bottom: 0;
+        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    /* ===================================================
+       HERO SECTION (PRESERVED CONTENT + GLASS STYLING)
+       =================================================== */
+    .landing-hero {
+        position: relative;
+        min-height: 88vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 20px 70px;
+    }
+
+    .hero-glass-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 26px;
+        padding: 55px 40px;
+        max-width: 950px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-glass-card h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #ffffff;
+        text-shadow: 0 3px 18px rgba(0, 0, 0, 0.7);
+        margin-bottom: 20px;
+    }
+
+    .hero-glass-card p.lead {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.92);
+        line-height: 1.85;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-cta-btn {
+        background: linear-gradient(135deg, #00c853, #1de9b6);
+        color: #ffffff !important;
+        font-weight: 700;
+        font-size: 1.15rem;
+        padding: 16px 48px;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0 8px 30px rgba(0, 200, 83, 0.45);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .hero-cta-btn:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 14px 40px rgba(0, 200, 83, 0.65);
+    }
+
+    /* ===================================================
+       1. WHY CHOOSE US (4 TRANSPARENT GLASS CARDS)
+       =================================================== */
+    .feature-glass-card {
+        background: rgba(255, 255, 255, 0.09);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 22px;
+        padding: 42px 26px;
+        text-align: center;
+        transition: all 0.35s ease;
+        height: 100%;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .feature-glass-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(72, 255, 130, 0.6);
+        box-shadow: 0 16px 40px rgba(0, 200, 83, 0.3);
+    }
+
+    .feature-glass-icon {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        margin: 0 auto 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #00c853, #1de9b6);
+        color: #ffffff;
+        font-size: 34px;
+        box-shadow: 0 6px 20px rgba(0, 200, 83, 0.4);
+        transition: transform 0.35s ease;
+    }
+
+    .feature-glass-card:hover .feature-glass-icon {
+        transform: scale(1.1);
+    }
+
+    .feature-glass-card h4 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #ffffff;
+    }
+
+    .feature-glass-card p {
+        color: rgba(255, 255, 255, 0.82);
+        line-height: 1.65;
+        font-size: 0.94rem;
+        margin-bottom: 0;
+    }
+
+    /* ===================================================
+       2. HOW IT WORKS (5 TRANSPARENT WORKFLOW CARDS)
+       =================================================== */
+    .workflow-glass-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .workflow-glass-card {
+        width: 220px;
+        background: rgba(255, 255, 255, 0.09);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        padding: 35px 20px;
+        text-align: center;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+        position: relative;
+        transition: all 0.35s ease;
+    }
+
+    .workflow-glass-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(72, 255, 130, 0.6);
+        box-shadow: 0 16px 40px rgba(0, 200, 83, 0.35);
+    }
+
+    .workflow-glass-number {
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .workflow-glass-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto 18px;
+        background: linear-gradient(135deg, #00c853, #1de9b6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 30px;
+        box-shadow: 0 6px 20px rgba(0, 200, 83, 0.4);
+        transition: transform 0.35s ease;
+    }
+
+    .workflow-glass-card:hover .workflow-glass-icon {
+        transform: scale(1.1);
+    }
+
+    .workflow-glass-card h4 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .workflow-glass-card p {
+        color: rgba(255, 255, 255, 0.82);
+        line-height: 1.55;
+        font-size: 0.88rem;
+        margin-bottom: 0;
+    }
+
+    .workflow-glass-arrow {
+        font-size: 26px;
+        color: #48ff82;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0 0 15px rgba(72, 255, 130, 0.6);
+    }
+
+    @media (max-width: 991px) {
+        .workflow-glass-arrow {
+            display: none;
+        }
+    }
+
+    /* ===================================================
+       3. SUPPORTED CROPS (8 TRANSPARENT CROP CARDS)
+       =================================================== */
+    .crop-glass-card {
+        background: rgba(255, 255, 255, 0.09);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        text-align: center;
+        padding: 30px 18px;
+        transition: all 0.35s ease;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        height: 100%;
+    }
+
+    .crop-glass-card:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.16);
+        border-color: rgba(72, 255, 130, 0.6);
+        box-shadow: 0 16px 40px rgba(0, 200, 83, 0.3);
+    }
+
+    .crop-glass-card img {
+        width: 92px;
+        height: 92px;
+        object-fit: contain;
+        margin: 0 auto 16px;
+        display: block;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+        transition: transform 0.35s ease;
+    }
+
+    .crop-glass-card:hover img {
+        transform: scale(1.12);
+    }
+
+    .crop-glass-card h5 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #ffffff;
+    }
+
+    .crop-glass-card small {
+        color: #48ff82;
+        font-weight: 600;
+        font-size: 0.88rem;
+        letter-spacing: 0.4px;
+    }
+
+    /* ===================================================
+       TESTIMONIALS / SUCCESS STORIES (GLASS THEME)
+       =================================================== */
+    .testimonial-glass-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 20px;
+        padding: 36px 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .testimonial-glass-card:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.12);
+        border-color: rgba(72, 255, 130, 0.45);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35), 0 0 25px rgba(72, 255, 130, 0.2);
+    }
+
+    .testimonial-stars {
+        color: #ffc107;
+        font-size: 1.15rem;
+        margin-bottom: 18px;
+        letter-spacing: 4px;
+        text-shadow: 0 0 12px rgba(255, 193, 7, 0.45);
+    }
+
+    .testimonial-text {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.02rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .testimonial-user {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .user-avatar-badge {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(72, 255, 130, 0.25), rgba(46, 125, 50, 0.65));
+        border: 2px solid rgba(72, 255, 130, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #48ff82;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        flex-shrink: 0;
+    }
+
+    .testimonial-user h5 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .testimonial-user span {
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.65);
+        display: block;
+        margin-top: 2px;
+    }
+
+    /* ===================================================
+       FREQUENTLY ASKED QUESTIONS (GLASS ACCORDION)
+       =================================================== */
+    .faq-container {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    .faq-glass-item {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 16px !important;
+        margin-bottom: 18px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-glass-item:hover {
+        border-color: rgba(72, 255, 130, 0.35);
+    }
+
+    .faq-glass-btn {
+        background: transparent !important;
+        color: #ffffff !important;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 22px 26px;
+        border: none !important;
+        box-shadow: none !important;
+        transition: all 0.3s ease;
+    }
+
+    .faq-glass-btn:not(.collapsed) {
+        background: linear-gradient(135deg, rgba(30, 110, 40, 0.92), rgba(46, 125, 50, 0.95)) !important;
+        color: #ffffff !important;
+        font-weight: 700;
+        border-bottom: 1px solid rgba(72, 255, 130, 0.35) !important;
+        box-shadow: 0 4px 20px rgba(46, 125, 50, 0.35) !important;
+    }
+
+    .faq-glass-btn::after {
+        filter: brightness(0) invert(1);
+        transition: transform 0.3s ease;
+    }
+
+    .faq-glass-body {
+        background: rgba(10, 20, 14, 0.45);
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 1.02rem;
+        line-height: 1.85;
+        padding: 22px 26px;
+    }
+
+    /* ===================================================
+       CALL TO ACTION BANNER (GLASS CTA)
+       =================================================== */
+    .glass-cta-box {
+        background: linear-gradient(135deg, rgba(27, 94, 32, 0.9), rgba(46, 125, 50, 0.85), rgba(30, 100, 45, 0.92));
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(72, 255, 130, 0.4);
+        border-radius: 28px;
+        padding: 65px 55px;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 25px 55px rgba(0, 0, 0, 0.45), 0 0 40px rgba(46, 125, 50, 0.3);
+    }
+
+    .glass-cta-box::before {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+        top: -140px;
+        right: -100px;
+        pointer-events: none;
+    }
+
+    .glass-cta-box::after {
+        content: "";
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 50%;
+        bottom: -110px;
+        left: -80px;
+        pointer-events: none;
+    }
+
+    .glass-cta-badge {
+        display: inline-block;
+        padding: 8px 22px;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.8px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .glass-cta-box h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 18px;
+        line-height: 1.25;
+        color: #ffffff;
+    }
+
+    .glass-cta-box h2 span {
+        color: #c8e6c9;
+        text-shadow: 0 0 20px rgba(200, 230, 201, 0.4);
+    }
+
+    .glass-cta-box p {
+        font-size: 1.08rem;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.92);
+        max-width: 650px;
+        margin: 0;
+    }
+
+    .glass-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px 42px;
+        border-radius: 50px;
+        background: #ffffff;
+        color: #1b5e20 !important;
+        font-size: 1.15rem;
+        font-weight: 800;
+        text-decoration: none;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .glass-cta-btn:hover {
+        background: #e8f5e9;
+        color: #0d3b12 !important;
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    @media (max-width: 991px) {
+        .glass-cta-box {
+            padding: 45px 30px;
+            text-align: center;
+        }
+
+        .glass-cta-box h2 {
+            font-size: 2.2rem;
+        }
+
+        .glass-cta-box p {
+            margin: 0 auto;
+        }
+    }
+
+    /* ===================================================
+       FLOATING CHATBOT BUTTON
+       =================================================== */
+    .floating-bot-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #00c853, #1de9b6);
+        color: #ffffff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        box-shadow: 0 8px 30px rgba(0, 200, 83, 0.5);
+        z-index: 9999;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .floating-bot-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 12px 35px rgba(0, 200, 83, 0.7);
+    }
+
+    /* ===================================================
+       SEAMLESS GLASS FOOTER
+       =================================================== */
+    .pro-footer {
+        background: rgba(10, 20, 14, 0.85) !important;
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        margin-top: 0 !important;
+        position: relative;
+        z-index: 10;
+    }
+</style>
+
+<div class="home-wrapper">
+
+    <!-- ==========================================
+         MAIN HERO SECTION (PRESERVED CONTENT)
+    =========================================== -->
+    <section class="landing-hero">
+        <div class="container text-center">
+            <div class="hero-glass-card mx-auto">
+
+                <span class="glass-tag mb-3">
+                    <i class="fa-solid fa-leaf me-1"></i> AI Powered Agriculture
+                </span>
+
+                <h1>Crop Disease Diagnostic System</h1>
+
+                <p class="lead mt-3">
+                    Detect plant leaf diseases using Deep Learning and image analysis.<br>
+                    Experience the future of smart farming with AgroVision AI.<br>
+                    Upload an image of your crop and receive instant AI-powered disease detection,<br>
+                    treatment recommendations, and preventive guidance with industry-leading accuracy.
+                </p>
+
+                <div class="mt-4">
+                    <a href="{{ url_for('predict_page') }}" class="hero-cta-btn">
+                        <i class="fa-solid fa-camera me-2"></i> Proceed to Detection
+                    </a>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="how-it-works text-white py-5">
-    <div class="container text-center">
-        <h2 class="mb-5">How It Works</h2>
+    <!-- ==========================================
+         1. WHY CHOOSE US (4 TRANSPARENT CARDS)
+    =========================================== -->
+    <section class="glass-section" id="features">
+        <div class="container">
 
-        <div class="row">
-            <div class="col-md-4">
-                <h5>1️⃣ Upload Image</h5>
-                <p>Select a clear leaf image.</p>
+            <div class="glass-title text-center">
+                <span class="glass-tag">
+                    Why Choose AgroVision AI
+                </span>
+                <h2>
+                    Smart Farming with <span>Artificial Intelligence</span>
+                </h2>
+                <p>
+                    Modern AI-powered tools to help farmers detect crop diseases,
+                    improve productivity and protect their harvest.
+                </p>
             </div>
 
-            <div class="col-md-4">
-                <h5>2️⃣ Analysis</h5>
-                <p>Model analyzes disease patterns.</p>
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-glass-card">
+                        <div class="feature-glass-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h4>AI Disease Detection</h4>
+                        <p>
+                            Detect crop diseases using our trained Deep Learning model.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-glass-card">
+                        <div class="feature-glass-icon">
+                            <i class="fa-solid fa-file-waveform"></i>
+                        </div>
+                        <h4>Detailed Reports</h4>
+                        <p>
+                            Cause, symptoms, treatment and precautions in one place.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-glass-card">
+                        <div class="feature-glass-icon">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <h4>3 Languages</h4>
+                        <p>
+                            English, Hindi and Marathi support for every farmer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-glass-card">
+                        <div class="feature-glass-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h4>AgroBot Assistant</h4>
+                        <p>
+                            Rule-based chatbot to answer farming and disease queries.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <h5>3️⃣ Get Result</h5>
-                <p>Disease name, cause, and cure.</p>
-            </div>
         </div>
-    </div>
-</section>
-</html>
+    </section>
+
+    <!-- ==========================================
+         2. HOW IT WORKS (IN 5 SIMPLE STEPS)
+    =========================================== -->
+    <section class="glass-section" id="workflow">
+        <div class="container">
+
+            <div class="glass-title text-center">
+                <span class="glass-tag">
+                    HOW IT WORKS
+                </span>
+                <h2>
+                    AI Powered Disease Detection <span>In 5 Simple Steps</span>
+                </h2>
+                <p>
+                    AgroVision AI combines Artificial Intelligence with modern
+                    agriculture to identify plant diseases and recommend the
+                    best treatment within seconds.
+                </p>
+            </div>
+
+            <!-- Top Row: Steps 01 to 04 with Arrows -->
+            <div class="workflow-glass-row">
+
+                <!-- Step 1 -->
+                <div class="workflow-glass-card">
+                    <div class="workflow-glass-number">01</div>
+                    <div class="workflow-glass-icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h4>Upload Image</h4>
+                    <p>Upload a crop image or capture a live photo.</p>
+                </div>
+
+                <div class="workflow-glass-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="workflow-glass-card">
+                    <div class="workflow-glass-number">02</div>
+                    <div class="workflow-glass-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h4>AI Analysis</h4>
+                    <p>Deep Learning analyzes the crop image.</p>
+                </div>
+
+                <div class="workflow-glass-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="workflow-glass-card">
+                    <div class="workflow-glass-number">03</div>
+                    <div class="workflow-glass-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h4>Disease Detection</h4>
+                    <p>AI predicts the disease with confidence.</p>
+                </div>
+
+                <div class="workflow-glass-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="workflow-glass-card">
+                    <div class="workflow-glass-number">04</div>
+                    <div class="workflow-glass-icon">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h4>Treatment</h4>
+                    <p>View causes, symptoms and precautions.</p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Row: Step 05 (Centered below) -->
+            <div class="workflow-glass-row mt-4">
+
+                <!-- Step 5 -->
+                <div class="workflow-glass-card">
+                    <div class="workflow-glass-number">05</div>
+                    <div class="workflow-glass-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h4>Recommended Fertilizer</h4>
+                    <p>Buy recommended fertilizers directly.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. SUPPORTED CROPS SECTION (8 GLASS CARDS)
+    =========================================== -->
+    <section class="glass-section" id="crops">
+        <div class="container">
+
+            <div class="glass-title text-center">
+                <span class="glass-tag">
+                    SUPPORTED CROPS
+                </span>
+                <h2>
+                    AI Supports <span>Multiple Crops</span>
+                </h2>
+                <p>
+                    AgroVision AI can identify diseases from multiple crop varieties
+                    using a trained Deep Learning model.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Tomato -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/tomato.png') }}" alt="Tomato">
+                        <h5>Tomato</h5>
+                        <small>10 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Potato -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/potato.png') }}" alt="Potato">
+                        <h5>Potato</h5>
+                        <small>3 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Corn -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/corn.jpg') }}" alt="Corn">
+                        <h5>Corn</h5>
+                        <small>4 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Apple -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/apple.png') }}" alt="Apple">
+                        <h5>Apple</h5>
+                        <small>4 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Grape -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/grape.jpg') }}" alt="Grape">
+                        <h5>Grape</h5>
+                        <small>4 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Pepper -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/pepper.png') }}" alt="Pepper">
+                        <h5>Pepper</h5>
+                        <small>2 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Peach -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/peach.png') }}" alt="Peach">
+                        <h5>Peach</h5>
+                        <small>2 Diseases</small>
+                    </div>
+                </div>
+
+                <!-- Cherry -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="crop-glass-card">
+                        <img src="{{ url_for('static', filename='images/crops/cherry.png') }}" alt="Cherry">
+                        <h5>Cherry</h5>
+                        <small>2 Diseases</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. SUCCESS STORIES / TESTIMONIALS (3 GLASS CARDS)
+    =========================================== -->
+    <section class="glass-section" id="testimonials">
+        <div class="container">
+
+            <div class="glass-title text-center">
+                <span class="glass-tag">
+                    SUCCESS STORIES
+                </span>
+                <h2>
+                    What Farmers Say About <span>AgroVision AI</span>
+                </h2>
+                <p>
+                    Helping farmers make informed decisions with AI-powered crop disease detection.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Testimonial 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-glass-card">
+                        <div>
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                AgroVision AI helped me identify tomato leaf disease in minutes. The treatment recommendations saved my crop.
+                            </p>
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-badge">RP</div>
+                            <div>
+                                <h5>Rajesh Patil</h5>
+                                <span>Pune, Maharashtra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-glass-card">
+                        <div>
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                The fertilizer recommendations were very useful. I directly purchased the suggested product online.
+                            </p>
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-badge">SJ</div>
+                            <div>
+                                <h5>Suresh Jadhav</h5>
+                                <span>Nashik, Maharashtra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="testimonial-glass-card">
+                        <div>
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                The AI prediction was accurate and the PDF report helped me discuss the issue with an agriculture officer.
+                            </p>
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-badge">AD</div>
+                            <div>
+                                <h5>Anita Deshmukh</h5>
+                                <span>Aurangabad, Maharashtra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. FREQUENTLY ASKED QUESTIONS (GLASS ACCORDION)
+    =========================================== -->
+    <section class="glass-section" id="faq">
+        <div class="container">
+
+            <div class="glass-title text-center">
+                <span class="glass-tag">
+                    FREQUENTLY ASKED QUESTIONS
+                </span>
+                <h2>
+                    Got Questions? <span>We've Got Answers</span>
+                </h2>
+                <p>
+                    Everything you need to know before using AgroVision AI.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="accordion" id="faqAccordion">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-glass-item">
+                        <h2 class="accordion-header" id="headingFaq1">
+                            <button class="accordion-button faq-glass-btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq1"
+                                    aria-expanded="true"
+                                    aria-controls="faq1">
+                                How accurate is AgroVision AI?
+                            </button>
+                        </h2>
+                        <div id="faq1"
+                             class="accordion-collapse collapse show"
+                             aria-labelledby="headingFaq1"
+                             data-bs-parent="#faqAccordion">
+                            <div class="faq-glass-body">
+                                AgroVision AI uses a trained Deep Learning model with approximately 98% prediction accuracy depending on image quality and crop type.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-glass-item">
+                        <h2 class="accordion-header" id="headingFaq2">
+                            <button class="accordion-button collapsed faq-glass-btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq2"
+                                    aria-expanded="false"
+                                    aria-controls="faq2">
+                                Which crops are supported?
+                            </button>
+                        </h2>
+                        <div id="faq2"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="headingFaq2"
+                             data-bs-parent="#faqAccordion">
+                            <div class="faq-glass-body">
+                                Currently AgroVision AI supports Tomato, Potato, Corn, Apple, Grape, Cherry, Peach, Pepper and many more crops.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-glass-item">
+                        <h2 class="accordion-header" id="headingFaq3">
+                            <button class="accordion-button collapsed faq-glass-btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq3"
+                                    aria-expanded="false"
+                                    aria-controls="faq3">
+                                Can I capture a photo directly?
+                            </button>
+                        </h2>
+                        <div id="faq3"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="headingFaq3"
+                             data-bs-parent="#faqAccordion">
+                            <div class="faq-glass-body">
+                                Yes. After logging in you can either upload an image from your device or capture one using your camera.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-glass-item">
+                        <h2 class="accordion-header" id="headingFaq4">
+                            <button class="accordion-button collapsed faq-glass-btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq4"
+                                    aria-expanded="false"
+                                    aria-controls="faq4">
+                                Will AgroVision AI recommend fertilizers?
+                            </button>
+                        </h2>
+                        <div id="faq4"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="headingFaq4"
+                             data-bs-parent="#faqAccordion">
+                            <div class="faq-glass-body">
+                                Yes. Along with disease prediction, AgroVision AI recommends suitable fertilizers and provides direct purchase links from Amazon and Flipkart.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-glass-item">
+                        <h2 class="accordion-header" id="headingFaq5">
+                            <button class="accordion-button collapsed faq-glass-btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq5"
+                                    aria-expanded="false"
+                                    aria-controls="faq5">
+                                Can I download the prediction report?
+                            </button>
+                        </h2>
+                        <div id="faq5"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="headingFaq5"
+                             data-bs-parent="#faqAccordion">
+                            <div class="faq-glass-body">
+                                Yes. Every prediction can be downloaded as a professional PDF report after analysis.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. CALL TO ACTION BANNER (GLASS CTA)
+    =========================================== -->
+    <section class="glass-section pt-2 pb-5" id="cta-banner">
+        <div class="container">
+
+            <div class="glass-cta-box">
+                <div class="row align-items-center position-relative" style="z-index: 2;">
+
+                    <!-- Left Column -->
+                    <div class="col-lg-8">
+                        <span class="glass-cta-badge">
+                            🌱 START YOUR AI JOURNEY
+                        </span>
+                        <h2>
+                            Protect Your Crops With
+                            <span>Artificial Intelligence</span>
+                        </h2>
+                        <p>
+                            Detect crop diseases in seconds using Deep Learning, receive treatment recommendations, fertilizer suggestions, and generate professional PDF reports.
+                        </p>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-4 text-lg-end text-center mt-4 mt-lg-0">
+                        {% if 'user' in session %}
+                        <a href="{{ url_for('predict_page') }}" class="glass-cta-btn">
+                            <i class="fa-solid fa-seedling me-1"></i> Detect Disease
+                        </a>
+                        {% else %}
+                        <a href="{{ url_for('predict_page') }}" class="glass-cta-btn">
+                            <i class="fa-solid fa-arrow-right-to-bracket me-1"></i> Get Started
+                        </a>
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Floating Chatbot Button -->
+<!-- <a href="{{ url_for('predict_page') }}" class="floating-bot-btn" title="AI Assistant">
+    <i class="fa-solid fa-robot"></i>
+</a> -->
 
 {% endblock %}
